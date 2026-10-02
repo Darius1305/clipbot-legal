@@ -1,0 +1,271 @@
+{
+ "updated": "2026-10-02T22:08:38+00:00",
+ "timezone": "Europe/Berlin",
+ "youtube_stats": false,
+ "channels": [
+  {
+   "id": "marli",
+   "name": "Marli",
+   "streamers": [
+    "marli"
+   ],
+   "tiktok": {
+    "handle": "marli.clips6367",
+    "url": "https://www.tiktok.com/@marli.clips6367"
+   },
+   "youtube": {},
+   "slots": [
+    {
+     "time": "12:30",
+     "kind": "random"
+    },
+    {
+     "time": "17:00",
+     "kind": "random"
+    },
+    {
+     "time": "20:00",
+     "kind": "top5"
+    }
+   ],
+   "totals": {
+    "tiktok": {
+     "views": 0,
+     "likes": 0,
+     "comments": 0,
+     "shares": 0,
+     "posts": 2
+    },
+    "youtube": {
+     "views": 0,
+     "likes": 0,
+     "comments": 0,
+     "shares": 0,
+     "posts": 0
+    }
+   },
+   "history": [
+    {
+     "day": "2026-10-03",
+     "platform": "tiktok",
+     "views": 0,
+     "likes": 0,
+     "comments": 0,
+     "shares": 0,
+     "posts": 2
+    },
+    {
+     "day": "2026-10-03",
+     "platform": "youtube",
+     "views": 0,
+     "likes": 0,
+     "comments": 0,
+     "shares": 0,
+     "posts": 0
+    }
+   ],
+   "posts": [
+    {
+     "kind": "random",
+     "slot": null,
+     "title": "Das Säureglas",
+     "clips": [
+      {
+       "title": "Das Säureglas",
+       "url": "https://www.twitch.tv/marli/clip/CleverFunnyNewtSpicyBoy-0KRWXkIrwZA3J6wZ",
+       "views": 150
+      }
+     ],
+     "created_at": "2026-10-02T21:36:51+00:00",
+     "tiktok": {
+      "status": "sent",
+      "url": "https://www.tiktok.com/@marli.clips6367/video/7692187777592479009",
+      "published_at": "2026-10-02T21:38:41.143Z",
+      "metrics_at": "2026-10-02T21:36:57.382Z",
+      "views": 0,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+     },
+     "youtube": {
+      "id": "i8Pm8VBaEWc",
+      "url": "https://youtube.com/shorts/i8Pm8VBaEWc",
+      "privacy": null,
+      "views": 0,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+     },
+     "thumb": "https://p16-common-sign.tiktokcdn-eu.com/tos-useast2a-p-4864-euttp/oc1lDzfDmIeABCqwzJJLrw2CABAEwEPgFDK6IQ~tplv-tiktokx-origin.image?dr=10395&x-expires=1791151200&x-signature=uuGEaDczCKTSv7c2ZHIb9RqJgMw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a"
+    },
+    {
+     "kind": "top5",
+     "slot": null,
+     "title": "TOP 5 MARLI MOMENTE",
+     "clips": [
+      {
+       "title": "mARLI Buttplug prank",
+       "url": "https://www.twitch.tv/marli/clip/RefinedPlayfulNostrilHoneyBadger-MBYFVlcdtN1qxUlf",
+       "views": 722
+      },
+      {
+       "title": "Das erste mal",
+       "url": "https://www.twitch.tv/marli/clip/DependableBlitheMonkeyYee-sKgfw98BsAnqE0wt",
+       "views": 592
+      },
+      {
+       "title": "marli holt seine freunde und tanzt wie ein löwe",
+       "url": "https://www.twitch.tv/marli/clip/FancyRealWitchSoonerLater-Zn_x3hOcB494kwuB",
+       "views": 506
+      },
+      {
+       "title": "o",
+       "url": "https://www.twitch.tv/marli/clip/ElatedYummyMouseCharlietheUnicorn-Q8byTigMmp1Cw7o5",
+       "views": 459
+      },
+      {
+       "title": "yakary geht wild",
+       "url": "https://www.twitch.tv/marli/clip/CovertCourageousPastaMoreCowbell-f1TxQKWAdlwkPHlQ",
+       "views": 31813
+      }
+     ],
+     "created_at": "2026-10-02T20:37:02+00:00",
+     "tiktok": {
+      "status": "sent",
+      "url": "https://www.tiktok.com/@marli.clips6367/video/7692172369422535968",
+      "published_at": "2026-10-02T20:38:46.782Z",
+      "metrics_at": "2026-10-02T20:37:02.912Z",
+      "views": 0,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+     },
+     "youtube": null,
+     "thumb": "https://p16-common-sign.tiktokcdn-eu.com/tos-useast2a-p-4864-euttp/oMMGIjReITwEQgLgVn1JeFCeHvSDDnggAQGbMl~tplv-tiktokx-origin.image?dr=10395&x-expires=1791151200&x-signature=gsSH5DIp1NUvx%2BsMFVdJfi0HZ%2Bk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a"
+    }
+   ]
+  },
+  {
+   "id": "willy",
+   "name": "Willy",
+   "streamers": [
+    "niklaswilson"
+   ],
+   "tiktok": {
+    "handle": "willyclips6367",
+    "url": "https://www.tiktok.com/@willyclips6367"
+   },
+   "youtube": {},
+   "slots": [
+    {
+     "time": "12:30",
+     "kind": "random"
+    },
+    {
+     "time": "17:00",
+     "kind": "random"
+    },
+    {
+     "time": "20:00",
+     "kind": "top5"
+    }
+   ],
+   "totals": {
+    "tiktok": {
+     "views": 0,
+     "likes": 0,
+     "comments": 0,
+     "shares": 0,
+     "posts": 2
+    },
+    "youtube": {
+     "views": 0,
+     "likes": 0,
+     "comments": 0,
+     "shares": 0,
+     "posts": 0
+    }
+   },
+   "history": [
+    {
+     "day": "2026-10-03",
+     "platform": "tiktok",
+     "views": 0,
+     "likes": 0,
+     "comments": 0,
+     "shares": 0,
+     "posts": 2
+    },
+    {
+     "day": "2026-10-03",
+     "platform": "youtube",
+     "views": 0,
+     "likes": 0,
+     "comments": 0,
+     "shares": 0,
+     "posts": 0
+    }
+   ],
+   "posts": [
+    {
+     "kind": "random",
+     "slot": null,
+     "title": "R999999999",
+     "clips": [
+      {
+       "title": "R999999999",
+       "url": "https://www.twitch.tv/niklaswilson/clip/TriumphantBoldKittenTwitchRPG-YygQgTWpd4j9ZWSS",
+       "views": 9879
+      }
+     ],
+     "created_at": "2026-10-02T21:50:23+00:00",
+     "tiktok": {
+      "status": "sent",
+      "url": "https://www.tiktok.com/@willyclips6367/video/7692191281895771424",
+      "published_at": "2026-10-02T21:52:13.449Z",
+      "metrics_at": "2026-10-02T21:50:29.834Z",
+      "views": 0,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+     },
+     "youtube": {
+      "id": "w1qx65J1bhc",
+      "url": "https://youtube.com/shorts/w1qx65J1bhc",
+      "privacy": null,
+      "views": 0,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+     },
+     "thumb": "https://p16-common-sign.tiktokcdn-eu.com/tos-useast2a-p-4864-euttp/ooAdMZvqIigAB355l3nizBKIADaJ00YBv9Ds2~tplv-tiktokx-origin.image?dr=10395&x-expires=1791151200&x-signature=noAei3M8P6M4C1ue0BjLHh9vggE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a"
+    },
+    {
+     "kind": "random",
+     "slot": null,
+     "title": "maurischa mein schatz",
+     "clips": [
+      {
+       "title": "maurischa mein schatz",
+       "url": "https://www.twitch.tv/niklaswilson/clip/ManlySmellyYakTTours-d51r_xZ2w5ZsY_6U",
+       "views": 481
+      }
+     ],
+     "created_at": "2026-10-02T21:37:37+00:00",
+     "tiktok": {
+      "status": "sent",
+      "url": "https://www.tiktok.com/@willyclips6367/video/7692187981376998689",
+      "published_at": "2026-10-02T21:39:27.268Z",
+      "metrics_at": "2026-10-02T21:37:43.272Z",
+      "views": 0,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+     },
+     "youtube": null,
+     "thumb": null
+    }
+   ]
+  }
+ ]
+}

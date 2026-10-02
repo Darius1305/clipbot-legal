@@ -73,6 +73,11 @@ header.top { display: flex; flex-wrap: wrap; align-items: flex-end; justify-cont
 .sub { color: var(--text-secondary); margin: 6px 0 0; }
 .updated { color: var(--text-muted); font-size: 13px; text-align: right; }
 .updated b { color: var(--text-secondary); font-weight: 600; }
+.live { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; color: var(--text-secondary); }
+.live::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--good); box-shadow: 0 0 0 0 rgba(12,163,12,.6); animation: pulse 2s infinite; }
+.live.off::before { background: var(--text-muted); animation: none; }
+@keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(12,163,12,.55); } 70% { box-shadow: 0 0 0 7px rgba(12,163,12,0); } 100% { box-shadow: 0 0 0 0 rgba(12,163,12,0); } }
+@media (prefers-reduced-motion: reduce) { .live::before { animation: none; } }
 
 /* filters */
 .filters { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; margin-bottom: 20px; }
@@ -222,13 +227,14 @@ footer { color: var(--text-muted); font-size: 12px; text-align: center; margin-t
     <div class="grid" id="videos"></div>
   </section>
 
-  <footer>clipbot · Daten von Buffer (TikTok) und der YouTube Data API · aktualisiert bei jedem Bot-Lauf</footer>
+  <footer>clipbot · YouTube-Zahlen live jede Minute (YouTube Data API) · TikTok-Zahlen über Buffer · neue Posts nach jedem Bot-Lauf</footer>
 </div>
 
 <div class="tip" id="tip" role="status" aria-live="polite"></div>
 
 <script>
-const state = { channel: "all", platform: "all", sort: "new", data: null };
+const state = { channel: "all", platform: "all", sort: "new", data: null, live: null };
+const REFRESH_MS = 60000;
 const fmt = new Intl.NumberFormat("de-DE");
 const compact = new Intl.NumberFormat("de-DE", { notation: "compact", maximumFractionDigits: 1 });
 const n = v => fmt.format(v || 0);
@@ -406,16 +412,67 @@ function render() {
   seg(document.getElementById("f-channel"), [["all", "Alle"], ...state.data.channels.map(c => [c.id, c.name])], "channel");
   document.querySelectorAll("#f-platform button").forEach(b => b.setAttribute("aria-pressed", b.dataset.v === state.platform));
   renderNotices(); renderKpis(); renderChannels(); renderChart(); renderVideos();
-  const u = state.data.updated;
-  document.getElementById("updated").innerHTML = `aktualisiert <b>${ago(u)}</b><br>${fmtDate(u, { day: "2-digit", month: "2-digit", year: "numeric", hour: "2-digit", minute: "2-digit" })}`;
+  renderUpdated();
+}
+
+function renderUpdated() {
+  const u = state.data.updated, l = state.live;
+  const liveTxt = l ? `<span class="live">YouTube live · ${fmtDate(l, { hour: "2-digit", minute: "2-digit", second: "2-digit" })}</span>`
+                    : `<span class="live off">YouTube live aus</span>`;
+  document.getElementById("updated").innerHTML = `${liveTxt}<br>Bot-Daten ${ago(u)} · TikTok über Buffer (ca. täglich)`;
+}
+
+// Live YouTube numbers straight from the YouTube Data API (key is restricted to this page)
+async function liveYoutube() {
+  const key = state.data?.youtube_key;
+  if (!key) return false;
+  const posts = state.data.channels.flatMap(c => c.posts).filter(p => p.youtube?.id);
+  const ids = [...new Set(posts.map(p => p.youtube.id))];
+  const stats = {};
+  for (let i = 0; i < ids.length; i += 50) {
+    const r = await fetch(`https://www.googleapis.com/youtube/v3/videos?part=statistics&id=${ids.slice(i, i + 50).join(",")}&key=${key}`);
+    if (!r.ok) return false;
+    for (const v of (await r.json()).items || []) stats[v.id] = v.statistics;
+  }
+  for (const c of state.data.channels) {
+    const t = { views: 0, likes: 0, comments: 0, shares: 0, posts: 0 };
+    for (const p of c.posts) {
+      const s = p.youtube && stats[p.youtube.id];
+      if (!s) continue;
+      Object.assign(p.youtube, { views: +s.viewCount || 0, likes: +s.likeCount || 0, comments: +s.commentCount || 0 });
+      t.views += p.youtube.views; t.likes += p.youtube.likes; t.comments += p.youtube.comments; t.posts++;
+    }
+    if (t.posts) c.totals.youtube = t;
+  }
+  const chIds = state.data.channels.map(c => c.youtube?.id).filter(Boolean);
+  if (chIds.length) {
+    const r = await fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${chIds.join(",")}&key=${key}`);
+    if (r.ok) for (const it of (await r.json()).items || []) {
+      const c = state.data.channels.find(c => c.youtube?.id === it.id);
+      if (c) c.youtube.subscribers = +it.statistics.subscriberCount || 0;
+    }
+  }
+  return true;
+}
+
+async function refresh() {
+  try {
+    const d = await (await fetch("data.json?t=" + Date.now())).json();
+    state.data = d;
+    state.live = (await liveYoutube().catch(() => false)) ? new Date().toISOString() : null;
+    render();
+  } catch (e) {
+    if (!state.data) document.getElementById("updated").textContent = "Daten konnten nicht geladen werden";
+  }
 }
 
 document.getElementById("f-platform").onclick = e => { const b = e.target.closest("button"); if (!b) return; state.platform = b.dataset.v; render(); };
 document.getElementById("sort").onchange = e => { state.sort = e.target.value; renderVideos(); };
 window.addEventListener("resize", () => state.data && renderChart());
 
-fetch("data.json?t=" + Date.now()).then(r => r.json()).then(d => { state.data = d; render(); })
-  .catch(() => { document.getElementById("updated").textContent = "Daten konnten nicht geladen werden"; });
+refresh();
+setInterval(() => { if (!document.hidden) refresh(); }, REFRESH_MS);
+document.addEventListener("visibilitychange", () => { if (!document.hidden) refresh(); });
 </script>
 </body>
 </html>

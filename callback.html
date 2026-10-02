@@ -10,6 +10,10 @@ button{margin-top:12px;padding:10px 18px;border:0;border-radius:8px;background:v
 <button id="c">Kopieren</button> <span id="ok"></span>
 <p class="meta">Copy the address above and paste it into the clipbot terminal prompt.</p>
 <script>
+// clipbot waits on this PC (127.0.0.1:8765) for the login result; hand it over directly
+if (location.search.includes('code=') || location.search.includes('error=')) {
+  location.replace('http://127.0.0.1:8765/callback' + location.search);
+}
 const u=document.getElementById('u');u.value=location.href;
 document.getElementById('c').onclick=async()=>{try{await navigator.clipboard.writeText(u.value)}catch(e){u.select();document.execCommand('copy')}document.getElementById('ok').textContent='Kopiert ✓'};
 </script>

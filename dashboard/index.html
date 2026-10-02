@@ -235,6 +235,8 @@ footer { color: var(--text-muted); font-size: 12px; text-align: center; margin-t
 <script>
 const state = { channel: "all", platform: "all", sort: "new", data: null, live: null };
 const REFRESH_MS = 60000;
+// the API key only accepts this page's full address as referrer; browsers send just the origin by default
+const YT_FETCH = { referrerPolicy: "no-referrer-when-downgrade" };
 const fmt = new Intl.NumberFormat("de-DE");
 const compact = new Intl.NumberFormat("de-DE", { notation: "compact", maximumFractionDigits: 1 });
 const n = v => fmt.format(v || 0);
@@ -430,7 +432,7 @@ async function liveYoutube() {
   const ids = [...new Set(posts.map(p => p.youtube.id))];
   const stats = {};
   for (let i = 0; i < ids.length; i += 50) {
-    const r = await fetch(`https://www.googleapis.com/youtube/v3/videos?part=statistics&id=${ids.slice(i, i + 50).join(",")}&key=${key}`);
+    const r = await fetch(`https://www.googleapis.com/youtube/v3/videos?part=statistics&id=${ids.slice(i, i + 50).join(",")}&key=${key}`, YT_FETCH);
     if (!r.ok) return false;
     for (const v of (await r.json()).items || []) stats[v.id] = v.statistics;
   }
@@ -446,7 +448,7 @@ async function liveYoutube() {
   }
   const chIds = state.data.channels.map(c => c.youtube?.id).filter(Boolean);
   if (chIds.length) {
-    const r = await fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${chIds.join(",")}&key=${key}`);
+    const r = await fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${chIds.join(",")}&key=${key}`, YT_FETCH);
     if (r.ok) for (const it of (await r.json()).items || []) {
       const c = state.data.channels.find(c => c.youtube?.id === it.id);
       if (c) c.youtube.subscribers = +it.statistics.subscriberCount || 0;

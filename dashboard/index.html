@@ -2,12 +2,13 @@
 <html lang="de">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#0a0f1d">
 <title>clipbot Dashboard</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root {
   color-scheme: dark;
@@ -22,7 +23,7 @@
   --brand-ink: #0a1424;
   --series-1: #3987e5;   /* TikTok */
   --series-2: #d95926;   /* YouTube */
-  --grid: #1f2a44;
+  --grid: #1c2741;
   --good: #0ca30c;
   --warning: #fab219;
   --critical: #d03b3b;
@@ -31,24 +32,15 @@
 @media (prefers-color-scheme: light) {
   :root:where(:not([data-theme="dark"])) {
     color-scheme: light;
-    --bg: #f3f5fa;
-    --surface-1: #ffffff;
-    --surface-2: #f6f8fc;
-    --border: #dde3ee;
-    --text-primary: #0b1020;
-    --text-secondary: #4a5470;
-    --text-muted: #7a849c;
-    --brand: #1c5cab;
-    --brand-ink: #ffffff;
-    --series-1: #2a78d6;
-    --series-2: #eb6834;
-    --grid: #e8ecf4;
+    --bg: #f3f5fa; --surface-1: #ffffff; --surface-2: #f4f6fb; --border: #dde3ee;
+    --text-primary: #0b1020; --text-secondary: #4a5470; --text-muted: #7a849c;
+    --brand: #1c5cab; --brand-ink: #ffffff; --series-1: #2a78d6; --series-2: #eb6834; --grid: #e8ecf4;
     --shadow: 0 1px 2px rgba(10,20,40,.06), 0 8px 24px rgba(10,20,40,.06);
   }
 }
 :root[data-theme="light"] {
   color-scheme: light;
-  --bg: #f3f5fa; --surface-1: #ffffff; --surface-2: #f6f8fc; --border: #dde3ee;
+  --bg: #f3f5fa; --surface-1: #ffffff; --surface-2: #f4f6fb; --border: #dde3ee;
   --text-primary: #0b1020; --text-secondary: #4a5470; --text-muted: #7a849c;
   --brand: #1c5cab; --brand-ink: #ffffff; --series-1: #2a78d6; --series-2: #eb6834; --grid: #e8ecf4;
   --shadow: 0 1px 2px rgba(10,20,40,.06), 0 8px 24px rgba(10,20,40,.06);
@@ -57,169 +49,171 @@
 
 * { box-sizing: border-box; }
 html, body { margin: 0; }
-body {
-  background: var(--bg);
-  color: var(--text-primary);
-  font: 15px/1.5 Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
-  -webkit-font-smoothing: antialiased;
-}
+body { background: var(--bg); color: var(--text-primary); font: 15px/1.45 Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; }
 a { color: inherit; }
-.wrap { max-width: 1180px; margin: 0 auto; padding: 28px 16px 64px; }
+.wrap { max-width: 1100px; margin: 0 auto; padding: 18px 16px calc(48px + env(safe-area-inset-bottom)); }
 
-/* header */
-header.top { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px; margin-bottom: 24px; }
-.logo { font-family: "Luckiest Guy", Inter, sans-serif; font-size: clamp(34px, 6vw, 52px); line-height: 1; color: var(--brand);
+header.top { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+.logo { font-family: "Luckiest Guy", Inter, sans-serif; font-size: 34px; line-height: 1; color: var(--brand);
   transform: skewX(-8deg); letter-spacing: .5px; text-shadow: 0 3px 0 rgba(0,0,0,.35); margin: 0; }
-.sub { color: var(--text-secondary); margin: 6px 0 0; }
-.updated { color: var(--text-muted); font-size: 13px; text-align: right; }
-.updated b { color: var(--text-secondary); font-weight: 600; }
-.live { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; color: var(--text-secondary); }
-.live::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--good); box-shadow: 0 0 0 0 rgba(12,163,12,.6); animation: pulse 2s infinite; }
+.live { display: inline-flex; align-items: center; gap: 7px; font-size: 12px; font-weight: 600; color: var(--text-secondary);
+  background: var(--surface-1); border: 1px solid var(--border); padding: 6px 10px; border-radius: 999px; white-space: nowrap; }
+.live::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--good); animation: pulse 2s infinite; }
 .live.off::before { background: var(--text-muted); animation: none; }
 @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(12,163,12,.55); } 70% { box-shadow: 0 0 0 7px rgba(12,163,12,0); } 100% { box-shadow: 0 0 0 0 rgba(12,163,12,0); } }
 @media (prefers-reduced-motion: reduce) { .live::before { animation: none; } }
+.meta-line { color: var(--text-muted); font-size: 12px; margin: -6px 0 14px; }
 
-/* filters */
-.filters { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; margin-bottom: 20px; }
-.seg { display: inline-flex; background: var(--surface-1); border: 1px solid var(--border); border-radius: 999px; padding: 3px; }
+.filters { display: flex; gap: 8px; margin: 0 -16px 16px; padding: 0 16px; overflow-x: auto; scrollbar-width: none; }
+.filters::-webkit-scrollbar { display: none; }
+.seg { display: inline-flex; flex: none; background: var(--surface-1); border: 1px solid var(--border); border-radius: 999px; padding: 3px; }
 .seg button { border: 0; background: transparent; color: var(--text-secondary); font: inherit; font-size: 13px; font-weight: 600;
-  padding: 6px 14px; border-radius: 999px; cursor: pointer; }
+  padding: 7px 13px; border-radius: 999px; cursor: pointer; white-space: nowrap; }
 .seg button[aria-pressed="true"] { background: var(--brand); color: var(--brand-ink); }
-.seg button:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
-.filters label { color: var(--text-muted); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; font-weight: 600; }
+.seg button:focus-visible, select:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
 
-/* cards */
-.card { background: var(--surface-1); border: 1px solid var(--border); border-radius: 16px; box-shadow: var(--shadow); }
-.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; margin-bottom: 20px; }
-.kpi { padding: 16px 18px; }
-.kpi .label { color: var(--text-secondary); font-size: 13px; font-weight: 500; }
-.kpi .value { font-size: 30px; font-weight: 700; letter-spacing: -.02em; margin-top: 2px; font-variant-numeric: tabular-nums; }
+.card { background: var(--surface-1); border: 1px solid var(--border); border-radius: 18px; box-shadow: var(--shadow); }
+section { margin-bottom: 18px; }
+h2 { font-size: 16px; margin: 0; font-weight: 700; letter-spacing: -.01em; }
+.sec-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 10px; }
+.hint { color: var(--text-muted); font-size: 12px; }
+
+.kpis { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.kpi { padding: 14px 15px; }
+.kpi.hero { grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; flex-wrap: wrap; }
+.kpi .label { color: var(--text-secondary); font-size: 12px; font-weight: 600; }
+.kpi .value { font-size: 26px; font-weight: 800; letter-spacing: -.02em; font-variant-numeric: tabular-nums; line-height: 1.15; }
+.kpi.hero .value { font-size: 44px; }
 .kpi .split { color: var(--text-muted); font-size: 12px; margin-top: 4px; display: flex; gap: 10px; flex-wrap: wrap; }
-.dot { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 5px; vertical-align: 1px; }
+.dot { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 5px; vertical-align: 1px; flex: none; }
 .dot.tt { background: var(--series-1); } .dot.yt { background: var(--series-2); }
+.share-bar { flex: 1 1 180px; max-width: 320px; }
+.share-bar .bar { display: flex; gap: 2px; height: 10px; border-radius: 5px; overflow: hidden; background: var(--surface-2); margin-top: 6px; }
+.share-bar .bar span { display: block; height: 100%; }
 
-h2 { font-size: 17px; margin: 0 0 12px; font-weight: 700; letter-spacing: -.01em; }
-section { margin-bottom: 28px; }
-.notice { padding: 12px 16px; border-radius: 12px; border: 1px solid var(--border); background: var(--surface-2); color: var(--text-secondary);
-  font-size: 13px; margin-bottom: 16px; display: flex; gap: 10px; align-items: flex-start; }
-.notice b { color: var(--text-primary); }
+.chart-card { padding: 14px 14px 10px; }
+.legend { display: flex; gap: 12px; font-size: 12px; color: var(--text-secondary); }
+.chart { position: relative; touch-action: pan-y; }
+.chart svg { display: block; width: 100%; overflow: visible; }
+.chart text { fill: var(--text-muted); font-size: 11px; font-family: Inter, sans-serif; }
+.chart .lbl { fill: var(--text-secondary); font-weight: 600; font-size: 12px; }
+.chart .val { fill: var(--text-primary); font-weight: 700; font-size: 12px; font-variant-numeric: tabular-nums; }
+.chart .gridline { stroke: var(--grid); stroke-width: 1; }
+.empty { color: var(--text-muted); font-size: 13px; padding: 28px 8px; text-align: center; }
+.tip { position: absolute; z-index: 10; pointer-events: none; background: var(--surface-2); border: 1px solid var(--border); border-radius: 10px;
+  padding: 8px 10px; font-size: 12px; box-shadow: var(--shadow); min-width: 150px; opacity: 0; transition: opacity .1s; }
+.tip .t { color: var(--text-muted); margin-bottom: 4px; max-width: 220px; }
+.tip .r { display: flex; justify-content: space-between; gap: 14px; color: var(--text-secondary); }
+.tip .r b { color: var(--text-primary); font-variant-numeric: tabular-nums; }
+details.table { margin-top: 6px; font-size: 12px; color: var(--text-secondary); }
+details.table summary { cursor: pointer; color: var(--text-muted); padding: 4px 0; }
+details.table table { width: 100%; border-collapse: collapse; margin-top: 6px; font-variant-numeric: tabular-nums; }
+details.table th, details.table td { text-align: right; padding: 4px 6px; border-bottom: 1px solid var(--border); }
+details.table th:first-child, details.table td:first-child { text-align: left; }
 
-/* channels */
-.channels { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px; }
-.ch { padding: 18px; }
-.ch-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
-.ch-name { font-family: "Luckiest Guy", Inter, sans-serif; font-size: 26px; color: var(--brand); transform: skewX(-8deg); display: inline-block; }
-.ch-links { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 14px; }
-.pill { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 999px; background: var(--surface-2);
+.channels { display: grid; gap: 10px; }
+.ch { padding: 14px 15px; }
+.ch-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.ch-name { font-family: "Luckiest Guy", Inter, sans-serif; font-size: 24px; color: var(--brand); transform: skewX(-8deg); display: inline-block; }
+.ch-links { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 12px; }
+.pill { display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px; border-radius: 999px; background: var(--surface-2);
   border: 1px solid var(--border); font-size: 12px; font-weight: 600; text-decoration: none; color: var(--text-secondary); }
-.pill:hover { color: var(--text-primary); border-color: var(--text-muted); }
-.ch-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-.ch-stat { background: var(--surface-2); border-radius: 12px; padding: 10px 12px; }
+.ch-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.ch-stat { background: var(--surface-2); border-radius: 12px; padding: 9px 11px; }
 .ch-stat .p { font-size: 12px; color: var(--text-secondary); font-weight: 600; }
-.ch-stat .n { font-size: 20px; font-weight: 700; font-variant-numeric: tabular-nums; }
-.ch-stat .m { font-size: 12px; color: var(--text-muted); }
-.next { margin-top: 12px; font-size: 13px; color: var(--text-secondary); }
-.slots { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
+.ch-stat .n { font-size: 19px; font-weight: 800; font-variant-numeric: tabular-nums; }
+.ch-stat .m { font-size: 11px; color: var(--text-muted); }
+.slots { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
 .slot { font-size: 12px; padding: 3px 8px; border-radius: 6px; background: var(--surface-2); border: 1px solid var(--border); color: var(--text-secondary); font-variant-numeric: tabular-nums; }
 .slot.is-next { border-color: var(--brand); color: var(--text-primary); }
 
-/* chart */
-.chart-card { padding: 18px; }
-.chart-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline; margin-bottom: 8px; }
-.legend { display: flex; gap: 14px; font-size: 13px; color: var(--text-secondary); }
-.chart { position: relative; }
-.chart svg { display: block; width: 100%; height: 260px; overflow: visible; }
-.chart .axis text { fill: var(--text-muted); font-size: 11px; }
-.chart .gridline { stroke: var(--grid); stroke-width: 1; }
-.tip { position: absolute; pointer-events: none; background: var(--surface-2); border: 1px solid var(--border); border-radius: 10px;
-  padding: 8px 10px; font-size: 12px; box-shadow: var(--shadow); min-width: 140px; opacity: 0; transition: opacity .1s; }
-.tip .t { color: var(--text-muted); margin-bottom: 4px; }
-.tip .r { display: flex; justify-content: space-between; gap: 12px; color: var(--text-secondary); }
-.tip .r b { color: var(--text-primary); font-variant-numeric: tabular-nums; }
-.empty { color: var(--text-muted); font-size: 14px; padding: 40px 0; text-align: center; }
-details.table { margin-top: 10px; font-size: 13px; color: var(--text-secondary); }
-details.table summary { cursor: pointer; color: var(--text-muted); }
-details.table table { width: 100%; border-collapse: collapse; margin-top: 8px; font-variant-numeric: tabular-nums; }
-details.table th, details.table td { text-align: right; padding: 4px 8px; border-bottom: 1px solid var(--border); }
-details.table th:first-child, details.table td:first-child { text-align: left; }
-
-/* videos */
-.vid-head { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; }
-.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px; }
-.vid { overflow: hidden; display: flex; flex-direction: column; }
-.thumb { position: relative; aspect-ratio: 9 / 12; background: linear-gradient(160deg, var(--surface-2), var(--bg)); overflow: hidden; }
-.thumb img { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; object-fit: cover; display: block; }
+select { background: var(--surface-1); color: var(--text-primary); border: 1px solid var(--border); border-radius: 10px; padding: 7px 10px; font: inherit; font-size: 13px; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.vid { overflow: hidden; display: flex; flex-direction: column; border-radius: 16px; }
+.thumb { position: relative; aspect-ratio: 9 / 13; background: linear-gradient(160deg, var(--surface-2), var(--bg)); overflow: hidden; }
+.thumb img { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; object-fit: cover; }
 .thumb .ph { position: absolute; inset: 0; display: grid; place-items: center; color: var(--text-muted); font-family: "Luckiest Guy", sans-serif;
-  font-size: 28px; transform: skewX(-8deg); text-align: center; padding: 20px; }
-.badges { position: absolute; z-index: 2; top: 10px; left: 10px; right: 10px; display: flex; justify-content: space-between; gap: 6px; }
-.badge { font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 6px; background: rgba(10,15,29,.82); color: #f2f5fb; backdrop-filter: blur(4px); }
-.badge.top5 { background: var(--brand); color: #0a1424; }
-.vid-body { padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
-.vid-title { font-weight: 700; font-size: 14px; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-.vid-meta { font-size: 12px; color: var(--text-muted); }
-.plat { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 8px; font-size: 12px; color: var(--text-secondary);
-  padding: 6px 8px; border-radius: 8px; background: var(--surface-2); }
-.plat .nums { display: flex; gap: 10px; font-variant-numeric: tabular-nums; }
+  font-size: 22px; transform: skewX(-8deg); text-align: center; padding: 12px; }
+.badges { position: absolute; z-index: 3; top: 8px; left: 8px; right: 8px; display: flex; justify-content: space-between; gap: 6px; }
+.badge { font-size: 10px; font-weight: 800; padding: 3px 7px; border-radius: 6px; background: rgba(10,15,29,.82); color: #f2f5fb; backdrop-filter: blur(4px); }
+.badge.top5 { background: #a9d6ff; color: #0a1424; }
+.views-over { position: absolute; z-index: 3; left: 8px; bottom: 8px; font-weight: 800; font-size: 15px; color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,.8); font-variant-numeric: tabular-nums; }
+.thumb::after { content: ""; position: absolute; inset: 55% 0 0; z-index: 2; background: linear-gradient(transparent, rgba(0,0,0,.65)); pointer-events: none; }
+.vid-body { padding: 10px 11px 12px; display: flex; flex-direction: column; gap: 7px; flex: 1; }
+.vid-title { font-weight: 700; font-size: 13px; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.vid-meta { font-size: 11px; color: var(--text-muted); display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.plat { display: flex; align-items: center; justify-content: space-between; gap: 6px; font-size: 12px; color: var(--text-secondary);
+  padding: 7px 8px; border-radius: 9px; background: var(--surface-2); text-decoration: none; }
+.plat .name { display: flex; align-items: center; font-weight: 700; color: var(--text-primary); }
+.plat .nums { display: flex; gap: 7px; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .plat .nums b { color: var(--text-primary); }
-.plat a { font-weight: 700; text-decoration: none; color: var(--text-primary); }
-.plat a:hover { text-decoration: underline; }
 .status { font-size: 11px; font-weight: 600; display: inline-flex; align-items: center; gap: 4px; }
-.status::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+.status::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
 .status.ok { color: var(--good); } .status.wait { color: var(--warning); } .status.err { color: var(--critical); }
 details.clips { font-size: 12px; color: var(--text-secondary); margin-top: auto; }
-details.clips summary { cursor: pointer; color: var(--text-muted); }
+details.clips summary { cursor: pointer; color: var(--text-muted); padding: 2px 0; }
 details.clips ol { margin: 6px 0 0; padding-left: 18px; }
-details.clips li { margin: 2px 0; }
-details.clips a { text-decoration: none; } details.clips a:hover { text-decoration: underline; }
-select { background: var(--surface-1); color: var(--text-primary); border: 1px solid var(--border); border-radius: 8px; padding: 6px 10px; font: inherit; font-size: 13px; }
-footer { color: var(--text-muted); font-size: 12px; text-align: center; margin-top: 40px; }
-.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
-@media (max-width: 520px) { .kpi .value { font-size: 24px; } .updated { text-align: left; } }
+details.clips a { text-decoration: none; }
+footer { color: var(--text-muted); font-size: 11px; text-align: center; margin-top: 28px; }
+
+@media (min-width: 720px) {
+  .wrap { padding-top: 28px; }
+  .logo { font-size: 46px; }
+  .kpis { grid-template-columns: 2fr 1fr 1fr 1fr 1fr; }
+  .kpi.hero { grid-column: auto; display: block; }
+  .kpi.hero .value { font-size: 40px; }
+  .share-bar { max-width: none; margin-top: 8px; }
+  .channels { grid-template-columns: 1fr 1fr; }
+  .charts { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .charts section { margin-bottom: 0; }
+  .grid { grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 14px; }
+  .filters { margin: 0 0 18px; padding: 0; overflow: visible; }
+}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header class="top">
-    <div>
-      <h1 class="logo">clipbot</h1>
-      <p class="sub">Alle Kanäle, alle Videos, alle Zahlen</p>
-    </div>
-    <div class="updated" id="updated">lädt …</div>
+    <h1 class="logo">clipbot</h1>
+    <span class="live off" id="live">lädt …</span>
   </header>
+  <p class="meta-line" id="meta"></p>
 
   <div class="filters" role="group" aria-label="Filter">
-    <label>Kanal</label><div class="seg" id="f-channel"></div>
-    <label>Plattform</label>
-    <div class="seg" id="f-platform">
+    <div class="seg" id="f-channel" aria-label="Kanal"></div>
+    <div class="seg" id="f-platform" aria-label="Plattform">
       <button data-v="all" aria-pressed="true">Alle</button>
       <button data-v="tiktok" aria-pressed="false">TikTok</button>
       <button data-v="youtube" aria-pressed="false">YouTube</button>
     </div>
   </div>
 
-  <div id="notices"></div>
-
   <section class="kpis" id="kpis" aria-label="Kennzahlen"></section>
 
-  <section>
-    <h2>Kanäle</h2>
+  <div class="charts">
+    <section class="card chart-card">
+      <div class="sec-head"><h2>Verlauf</h2><div class="legend" id="legend-line"></div></div>
+      <div class="chart" id="chart-line"></div>
+      <details class="table"><summary>Als Tabelle</summary><div id="table-line"></div></details>
+    </section>
+    <section class="card chart-card">
+      <div class="sec-head"><h2>Views pro Video</h2><div class="legend" id="legend-bars"></div></div>
+      <div class="chart" id="chart-bars"></div>
+    </section>
+  </div>
+
+  <section style="margin-top:18px">
+    <div class="sec-head"><h2>Kanäle</h2></div>
     <div class="channels" id="channels"></div>
   </section>
 
-  <section class="card chart-card">
-    <div class="chart-head">
-      <h2 style="margin:0">Views über Zeit</h2>
-      <div class="legend" id="legend"></div>
-    </div>
-    <div class="chart" id="chart"></div>
-    <details class="table"><summary>Als Tabelle anzeigen</summary><div id="chart-table"></div></details>
-  </section>
-
   <section>
-    <div class="vid-head">
+    <div class="sec-head">
       <h2 id="vid-title">Videos</h2>
       <select id="sort" aria-label="Sortierung">
-        <option value="new">Neueste zuerst</option>
+        <option value="new">Neueste</option>
         <option value="views">Meiste Views</option>
         <option value="likes">Meiste Likes</option>
       </select>
@@ -227,251 +221,275 @@ footer { color: var(--text-muted); font-size: 12px; text-align: center; margin-t
     <div class="grid" id="videos"></div>
   </section>
 
-  <footer>clipbot · YouTube-Zahlen live jede Minute (YouTube Data API) · TikTok-Zahlen über Buffer · neue Posts nach jedem Bot-Lauf</footer>
+  <footer>YouTube live jede Minute · TikTok über Buffer (ca. täglich) · neue Posts nach jedem Bot-Lauf</footer>
 </div>
-
 <div class="tip" id="tip" role="status" aria-live="polite"></div>
 
 <script>
-const state = { channel: "all", platform: "all", sort: "new", data: null, live: null };
 const REFRESH_MS = 60000;
 // the API key only accepts this page's full address as referrer; browsers send just the origin by default
 const YT_FETCH = { referrerPolicy: "no-referrer-when-downgrade" };
+const PLAT = { tiktok: "TikTok", youtube: "YouTube" };
+const KIND = { top5: "Top 5", random: "Einzel-Clip", extern: "Manuell" };
+const state = { channel: "all", platform: "all", sort: "new", data: null, liveAt: null, live: {} };
 const fmt = new Intl.NumberFormat("de-DE");
 const compact = new Intl.NumberFormat("de-DE", { notation: "compact", maximumFractionDigits: 1 });
 const n = v => fmt.format(v || 0);
-const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-const KIND = { top5: "Top 5", random: "Einzel-Clip" };
-const PLAT = { tiktok: "TikTok", youtube: "YouTube" };
+const c = v => compact.format(v || 0);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, ch => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch]));
+const dotCls = p => p === "tiktok" ? "tt" : "yt";
+const color = p => p === "tiktok" ? "var(--series-1)" : "var(--series-2)";
 
-function tz() { return state.data?.timezone || "Europe/Berlin"; }
-function fmtDate(iso, opts) { return iso ? new Date(iso).toLocaleString("de-DE", { timeZone: tz(), ...opts }) : "–"; }
+const tz = () => state.data?.timezone || "Europe/Berlin";
+const fmtDate = (iso, o) => iso ? new Date(iso).toLocaleString("de-DE", { timeZone: tz(), ...o }) : "–";
 function ago(iso) {
   const m = Math.round((Date.now() - new Date(iso)) / 60000);
   if (m < 1) return "gerade eben"; if (m < 60) return `vor ${m} Min.`;
-  const h = Math.round(m / 60); if (h < 24) return `vor ${h} Std.`;
-  return `vor ${Math.round(h / 24)} Tagen`;
+  const h = Math.round(m / 60); return h < 24 ? `vor ${h} Std.` : `vor ${Math.round(h / 24)} T.`;
 }
-function channels() { return state.data.channels.filter(c => state.channel === "all" || c.id === state.channel); }
-function plats() { return state.platform === "all" ? ["tiktok", "youtube"] : [state.platform]; }
-function postViews(p, ps = plats()) { return ps.reduce((s, k) => s + (p[k]?.views || 0), 0); }
-function postLikes(p, ps = plats()) { return ps.reduce((s, k) => s + (p[k]?.likes || 0), 0); }
+const channels = () => state.data.channels.filter(ch => state.channel === "all" || ch.id === state.channel);
+const plats = () => state.platform === "all" ? ["tiktok", "youtube"] : [state.platform];
+const pv = (p, ps = plats()) => ps.reduce((s, k) => s + (p[k]?.views || 0), 0);
+const pl = (p, ps = plats()) => ps.reduce((s, k) => s + (p[k]?.likes || 0), 0);
+const totals = (k, p) => channels().reduce((s, ch) => s + (ch.totals[p]?.[k] || 0), 0);
 
-function seg(el, items, key) {
-  el.innerHTML = items.map(([v, l]) => `<button data-v="${v}" aria-pressed="${state[key] === v}">${esc(l)}</button>`).join("");
-  el.onclick = e => { const b = e.target.closest("button"); if (!b) return; state[key] = b.dataset.v; render(); };
+const tip = document.getElementById("tip");
+function showTip(html, clientX, clientY) {
+  tip.innerHTML = html; tip.style.opacity = 1;
+  const w = tip.offsetWidth, vw = document.documentElement.clientWidth;
+  tip.style.left = Math.max(8, Math.min(clientX + window.scrollX + 12, window.scrollX + vw - w - 8)) + "px";
+  tip.style.top = Math.max(window.scrollY + 8, clientY + window.scrollY - tip.offsetHeight - 12) + "px";
 }
-
-function renderNotices() {
-  const d = state.data, out = [];
-  if (!d.youtube_stats) out.push(`<div class="notice">ℹ️ <span><b>YouTube-Zahlen fehlen noch.</b> Dafür braucht der Bot einen YouTube-API-Key (GitHub-Secret <code>YOUTUBE_API_KEY</code>).</span></div>`);
-  out.push(`<div class="notice">⏱️ <span>TikTok-Zahlen kommen über Buffer und werden dort etwa <b>einmal am Tag</b> aktualisiert. Neue Videos stehen anfangs auf 0.</span></div>`);
-  document.getElementById("notices").innerHTML = out.join("");
-}
+const hideTip = () => { tip.style.opacity = 0; };
 
 function renderKpis() {
-  const cs = channels(), ps = plats();
-  const posts = cs.flatMap(c => c.posts);
-  const sum = (k, p) => cs.reduce((s, c) => s + (c.totals[p]?.[k] || 0), 0);
-  const tot = k => ps.reduce((s, p) => s + sum(k, p), 0);
-  const split = k => ps.length > 1 ? `<div class="split"><span><span class="dot tt"></span>TikTok ${n(sum(k, "tiktok"))}</span><span><span class="dot yt"></span>YouTube ${n(sum(k, "youtube"))}</span></div>` : "";
-  const videos = posts.filter(p => ps.some(k => p[k])).length;
-  const views = tot("views");
-  const best = [...posts].sort((a, b) => postViews(b) - postViews(a))[0];
-  const tiles = [
-    ["Videos", n(videos), `<div class="split">${cs.length} ${cs.length === 1 ? "Kanal" : "Kanäle"}</div>`],
-    ["Views gesamt", n(views), split("views")],
-    ["Likes", n(tot("likes")), split("likes")],
-    ["Kommentare", n(tot("comments")), split("comments")],
-    ["Ø Views / Video", n(videos ? Math.round(views / videos) : 0), best && postViews(best) ? `<div class="split">Bestes: ${esc(best.title.slice(0, 28))}</div>` : ""],
-  ];
-  document.getElementById("kpis").innerHTML = tiles.map(([l, v, s]) =>
-    `<div class="card kpi"><div class="label">${l}</div><div class="value">${v}</div>${s}</div>`).join("");
+  const ps = plats(), posts = channels().flatMap(ch => ch.posts).filter(p => ps.some(k => p[k]));
+  const views = ps.reduce((s, p) => s + totals("views", p), 0);
+  const likes = ps.reduce((s, p) => s + totals("likes", p), 0);
+  const comments = ps.reduce((s, p) => s + totals("comments", p), 0);
+  const subs = channels().reduce((s, ch) => s + (ch.youtube?.subscribers || 0), 0);
+  const tt = totals("views", "tiktok"), yt = totals("views", "youtube"), sum = Math.max(1, tt + yt);
+  const shareBar = ps.length > 1 ? `<div class="share-bar"><div class="split"><span><span class="dot tt"></span>TikTok ${n(tt)}</span><span><span class="dot yt"></span>YouTube ${n(yt)}</span></div>
+    <div class="bar" aria-hidden="true"><span style="width:${tt / sum * 100}%;background:var(--series-1)"></span><span style="width:${yt / sum * 100}%;background:var(--series-2)"></span></div></div>` : "";
+  const tile = (l, v, s = "") => `<div class="card kpi"><div class="label">${l}</div><div class="value">${v}</div>${s}</div>`;
+  document.getElementById("kpis").innerHTML =
+    `<div class="card kpi hero"><div><div class="label">Views gesamt</div><div class="value">${n(views)}</div></div>${shareBar}</div>` +
+    tile("Videos", n(posts.length)) + tile("Likes", n(likes)) + tile("Kommentare", n(comments)) +
+    tile("Ø Views / Video", n(posts.length ? Math.round(views / posts.length) : 0), subs ? `<div class="split">${n(subs)} YouTube-Abos</div>` : "");
+}
+
+function seriesPoints() {
+  const chans = channels(), byTs = new Map();
+  const put = (t, key, v) => { if (!byTs.has(t)) byTs.set(t, {}); byTs.get(t)[key] = v; };
+  for (const ch of chans) for (const s of ch.snapshots || []) put(new Date(s.ts).getTime(), `${ch.id}|${s.platform}`, s.views || 0);
+  for (const ch of chans) for (const pt of state.live[ch.id] || []) { put(pt.t, `${ch.id}|youtube`, pt.youtube); put(pt.t, `${ch.id}|tiktok`, pt.tiktok); }
+  const last = {};
+  return [...byTs.keys()].sort((a, b) => a - b).map(t => {
+    Object.assign(last, byTs.get(t));
+    const row = { t };
+    for (const p of ["tiktok", "youtube"]) row[p] = chans.reduce((s, ch) => s + (last[`${ch.id}|${p}`] || 0), 0);
+    return row;
+  });
+}
+
+function renderLine() {
+  const el = document.getElementById("chart-line"), ps = plats(), rows = seriesPoints();
+  document.getElementById("legend-line").innerHTML = ps.length > 1 ? ps.map(p => `<span><span class="dot ${dotCls(p)}"></span>${PLAT[p]}</span>`).join("") : "";
+  document.getElementById("table-line").innerHTML = `<table><thead><tr><th>Zeit</th>${ps.map(p => `<th>${PLAT[p]}</th>`).join("")}</tr></thead><tbody>${
+    rows.slice(-30).reverse().map(r => `<tr><td>${fmtDate(r.t, { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" })}</td>${ps.map(p => `<td>${n(r[p])}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
+  if (rows.length < 2) { el.innerHTML = `<div class="empty">Der Verlauf füllt sich mit jeder Aktualisierung.<br>Lass die Seite offen, dann kommt jede Minute ein Punkt dazu.</div>`; return; }
+
+  const W = Math.max(280, el.clientWidth), H = W < 500 ? 200 : 230, m = { l: 40, r: 10, t: 16, b: 24 };
+  const iw = W - m.l - m.r, ih = H - m.t - m.b;
+  const t0 = rows[0].t, t1 = rows.at(-1).t, span = Math.max(1, t1 - t0);
+  const max = Math.max(1, ...rows.flatMap(r => ps.map(p => r[p])));
+  const mag = Math.pow(10, Math.floor(Math.log10(max))), top = Math.ceil(max * 1.08 / mag) * mag;
+  const x = t => m.l + (t - t0) / span * iw, y = v => m.t + ih - v / top * ih;
+  const multiDay = span > 36 * 3600e3;
+  const tickN = Math.max(2, Math.min(5, Math.floor(iw / 80)));
+  const xt = Array.from({ length: tickN }, (_, i) => t0 + span * i / (tickN - 1));
+  const line = p => rows.map((r, i) => `${i ? "L" : "M"}${x(r.t).toFixed(1)},${y(r[p]).toFixed(1)}`).join("");
+  const area = p => `${line(p)}L${x(t1).toFixed(1)},${y(0)}L${x(t0).toFixed(1)},${y(0)}Z`;
+  const lastRow = rows.at(-1);
+  el.innerHTML = `<svg viewBox="0 0 ${W} ${H}" height="${H}" role="img" aria-label="Views über Zeit">
+    <defs>${ps.map(p => `<linearGradient id="g-${p}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${color(p)}" stop-opacity=".28"/><stop offset="1" stop-color="${color(p)}" stop-opacity="0"/></linearGradient>`).join("")}</defs>
+    ${[0, .5, 1].map(f => `<line class="gridline" x1="${m.l}" x2="${W - m.r}" y1="${y(top * f)}" y2="${y(top * f)}"/><text x="${m.l - 6}" y="${y(top * f) + 4}" text-anchor="end">${c(top * f)}</text>`).join("")}
+    ${xt.map((t, i) => `<text x="${x(t)}" y="${H - 5}" text-anchor="${i === 0 ? "start" : i === xt.length - 1 ? "end" : "middle"}">${fmtDate(t, multiDay ? { day: "2-digit", month: "2-digit" } : { hour: "2-digit", minute: "2-digit" })}</text>`).join("")}
+    ${ps.map(p => `<path d="${area(p)}" fill="url(#g-${p})"/>`).join("")}
+    ${ps.map(p => `<path d="${line(p)}" fill="none" stroke="${color(p)}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>`).join("")}
+    ${ps.map(p => `<circle cx="${x(t1)}" cy="${y(lastRow[p])}" r="4" fill="${color(p)}" stroke="var(--surface-1)" stroke-width="2"/>`).join("")}
+    ${ps.map(p => `<text class="val" x="${x(t1) - 8}" y="${y(lastRow[p]) - 9}" text-anchor="end">${c(lastRow[p])}</text>`).join("")}
+    <line id="xh" y1="${m.t}" y2="${m.t + ih}" stroke="var(--text-muted)" stroke-dasharray="3 3" opacity="0"/>
+    ${ps.map(p => `<circle class="mk" data-p="${p}" r="5" fill="${color(p)}" stroke="var(--surface-1)" stroke-width="2" opacity="0"/>`).join("")}
+    <rect x="${m.l}" y="0" width="${iw}" height="${H}" fill="transparent" class="hit"/>
+  </svg>`;
+  const svg = el.querySelector("svg"), xh = svg.querySelector("#xh");
+  const move = e => {
+    const r = svg.getBoundingClientRect(), px = (e.clientX - r.left) * (W / r.width), tt = t0 + (px - m.l) / iw * span;
+    let i = 0; for (let k = 1; k < rows.length; k++) if (Math.abs(rows[k].t - tt) < Math.abs(rows[i].t - tt)) i = k;
+    const row = rows[i];
+    xh.setAttribute("x1", x(row.t)); xh.setAttribute("x2", x(row.t)); xh.setAttribute("opacity", 1);
+    svg.querySelectorAll(".mk").forEach(cc => { cc.setAttribute("cx", x(row.t)); cc.setAttribute("cy", y(row[cc.dataset.p])); cc.setAttribute("opacity", 1); });
+    showTip(`<div class="t">${fmtDate(row.t, { weekday: "short", day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" })}</div>` +
+      ps.map(p => `<div class="r"><span><span class="dot ${dotCls(p)}"></span>${PLAT[p]}</span><b>${n(row[p])}</b></div>`).join(""), e.clientX, r.top + 30);
+  };
+  const leave = () => { hideTip(); xh.setAttribute("opacity", 0); svg.querySelectorAll(".mk").forEach(cc => cc.setAttribute("opacity", 0)); };
+  const hit = svg.querySelector(".hit");
+  hit.addEventListener("pointermove", move); hit.addEventListener("pointerdown", move); hit.addEventListener("pointerleave", leave);
+}
+
+function renderBars() {
+  const el = document.getElementById("chart-bars"), ps = plats();
+  document.getElementById("legend-bars").innerHTML = ps.length > 1 ? ps.map(p => `<span><span class="dot ${dotCls(p)}"></span>${PLAT[p]}</span>`).join("") : "";
+  const posts = channels().flatMap(ch => ch.posts.map(p => ({ ...p, ch: ch.name }))).filter(p => ps.some(k => p[k]))
+    .sort((a, b) => pv(b) - pv(a)).slice(0, 8);
+  if (!posts.length || !posts.some(p => pv(p))) { el.innerHTML = `<div class="empty">Noch keine Views gezählt.</div>`; return; }
+  const W = Math.max(280, el.clientWidth), row = 44, H = posts.length * row, valW = 54;
+  const iw = W - valW, max = Math.max(1, ...posts.map(p => pv(p)));
+  el.innerHTML = `<svg viewBox="0 0 ${W} ${H}" height="${H}" role="img" aria-label="Views pro Video">${posts.map((p, i) => {
+    let x0 = 0; const y0 = i * row;
+    const segs = ps.map(k => { const v = p[k]?.views || 0, w = v / max * iw, s = { k, x: x0, w }; if (w) x0 += w + 2; return s; }).filter(s => s.w > 0);
+    const title = p.title.length > 34 ? p.title.slice(0, 33) + "…" : p.title;
+    return `<g class="bar-row" data-i="${i}">
+      <text class="lbl" x="0" y="${y0 + 14}">${esc(title)}<tspan fill="var(--text-muted)" font-weight="500"> · ${esc(p.ch)}</tspan></text>
+      ${segs.map((s, j) => `<rect x="${s.x}" y="${y0 + 21}" width="${Math.max(3, s.w)}" height="12" rx="${j === segs.length - 1 ? 4 : 1}" fill="${color(s.k)}"/>`).join("")}
+      <text class="val" x="${Math.min(x0 + 6, W - valW + 6)}" y="${y0 + 32}">${c(pv(p))}</text>
+      <rect x="0" y="${y0}" width="${W}" height="${row}" fill="transparent"/>
+    </g>`;
+  }).join("")}</svg>`;
+  el.querySelectorAll(".bar-row").forEach(g => {
+    const p = posts[+g.dataset.i];
+    const show = e => showTip(`<div class="t">${esc(p.title)}</div>` + ps.filter(k => p[k]).map(k =>
+      `<div class="r"><span><span class="dot ${dotCls(k)}"></span>${PLAT[k]}</span><b>${n(p[k].views)}</b></div>`).join(""), e.clientX, e.clientY);
+    g.addEventListener("pointermove", show); g.addEventListener("pointerdown", show); g.addEventListener("pointerleave", hideTip);
+  });
 }
 
 function nextSlot(slots) {
-  const now = new Date(), parts = Object.fromEntries(new Intl.DateTimeFormat("en-GB", { timeZone: tz(), hour: "2-digit", minute: "2-digit", hourCycle: "h23" })
-    .formatToParts(now).map(p => [p.type, p.value]));
+  const parts = Object.fromEntries(new Intl.DateTimeFormat("en-GB", { timeZone: tz(), hour: "2-digit", minute: "2-digit", hourCycle: "h23" })
+    .formatToParts(new Date()).map(p => [p.type, p.value]));
   const cur = `${parts.hour}:${parts.minute}`;
   return slots.find(s => s.time > cur) || slots[0];
 }
-
 function renderChannels() {
-  document.getElementById("channels").innerHTML = channels().map(c => {
-    const nx = nextSlot(c.slots), yt = c.youtube || {};
-    const stat = (p, label) => {
-      const t = c.totals[p];
-      return `<div class="ch-stat"><div class="p"><span class="dot ${p === "tiktok" ? "tt" : "yt"}"></span>${label}</div>
-        <div class="n">${n(t.views)} <span class="m">Views</span></div>
-        <div class="m">${n(t.posts)} Videos · ${n(t.likes)} Likes${p === "youtube" && yt.subscribers != null ? ` · ${n(yt.subscribers)} Abos` : ""}</div></div>`;
-    };
+  document.getElementById("channels").innerHTML = channels().map(ch => {
+    const nx = nextSlot(ch.slots), yt = ch.youtube || {};
+    const st = p => { const t = ch.totals[p]; return `<div class="ch-stat"><div class="p"><span class="dot ${dotCls(p)}"></span>${PLAT[p]}</div>
+      <div class="n">${n(t.views)}</div><div class="m">${n(t.posts)} Videos · ${n(t.likes)} Likes${p === "youtube" && yt.subscribers != null ? ` · ${n(yt.subscribers)} Abos` : ""}</div></div>`; };
     return `<div class="card ch">
-      <div class="ch-head"><span class="ch-name">${esc(c.name)}</span><span class="vid-meta">${c.posts.length} Posts</span></div>
+      <div class="ch-head"><span class="ch-name">${esc(ch.name)}</span><span class="hint">nächster Post ${nx.time}</span></div>
       <div class="ch-links">
-        ${c.streamers.map(s => `<a class="pill" href="https://twitch.tv/${esc(s)}" target="_blank" rel="noopener">Twitch: ${esc(s)} ↗</a>`).join("")}
-        ${c.tiktok?.url ? `<a class="pill" href="${esc(c.tiktok.url)}" target="_blank" rel="noopener">TikTok: @${esc(c.tiktok.handle)} ↗</a>` : ""}
-        ${yt.url ? `<a class="pill" href="${esc(yt.url)}" target="_blank" rel="noopener">YouTube: ${esc(yt.title)} ↗</a>` : ""}
+        ${ch.streamers.map(s => `<a class="pill" href="https://twitch.tv/${esc(s)}" target="_blank" rel="noopener">Twitch ↗</a>`).join("")}
+        ${ch.tiktok?.url ? `<a class="pill" href="${esc(ch.tiktok.url)}" target="_blank" rel="noopener">@${esc(ch.tiktok.handle)} ↗</a>` : ""}
+        ${yt.url ? `<a class="pill" href="${esc(yt.url)}" target="_blank" rel="noopener">YouTube ↗</a>` : ""}
       </div>
-      <div class="ch-stats">${stat("tiktok", "TikTok")}${stat("youtube", "YouTube")}</div>
-      <div class="next">Zeitplan täglich</div>
-      <div class="slots">${c.slots.map(s => `<span class="slot ${s === nx ? "is-next" : ""}" title="${s === nx ? "Nächster Post" : ""}">${s.time} · ${KIND[s.kind] || s.kind}</span>`).join("")}</div>
+      <div class="ch-stats">${st("tiktok")}${st("youtube")}</div>
+      <div class="slots">${ch.slots.map(s => `<span class="slot ${s === nx ? "is-next" : ""}">${s.time} ${KIND[s.kind] || s.kind}</span>`).join("")}</div>
     </div>`;
   }).join("");
-}
-
-function historyRows() {
-  const byDay = {};
-  for (const c of channels()) for (const h of c.history) {
-    byDay[h.day] ??= { tiktok: 0, youtube: 0 };
-    byDay[h.day][h.platform] += h.views || 0;
-  }
-  return Object.entries(byDay).sort(([a], [b]) => a.localeCompare(b)).map(([day, v]) => ({ day, ...v }));
-}
-
-function renderChart() {
-  const ps = plats(), rows = historyRows(), el = document.getElementById("chart");
-  document.getElementById("legend").innerHTML = ps.length > 1 ? ps.map(p => `<span><span class="dot ${p === "tiktok" ? "tt" : "yt"}"></span>${PLAT[p]}</span>`).join("") : "";
-  document.getElementById("chart-table").innerHTML = `<table><thead><tr><th>Tag</th>${ps.map(p => `<th>${PLAT[p]}</th>`).join("")}</tr></thead><tbody>${
-    rows.map(r => `<tr><td>${r.day}</td>${ps.map(p => `<td>${n(r[p])}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
-  if (rows.length < 2) { el.innerHTML = `<div class="empty">Der Verlauf erscheint ab dem zweiten Tag mit Daten.<br>Heute: ${ps.map(p => `${PLAT[p]} ${n(rows[0]?.[p] || 0)} Views`).join(" · ")}</div>`; return; }
-
-  const W = el.clientWidth || 800, H = 260, m = { l: 48, r: 12, t: 12, b: 26 };
-  const iw = W - m.l - m.r, ih = H - m.t - m.b;
-  const max = Math.max(1, ...rows.flatMap(r => ps.map(p => r[p])));
-  const nice = (() => { const e = Math.pow(10, Math.floor(Math.log10(max))); return Math.ceil(max / e) * e; })();
-  const x = i => m.l + (rows.length === 1 ? iw / 2 : (i / (rows.length - 1)) * iw);
-  const y = v => m.t + ih - (v / nice) * ih;
-  const ticks = [0, .25, .5, .75, 1].map(f => f * nice);
-  const step = Math.max(1, Math.ceil(rows.length / Math.floor(iw / 70)));
-  const colors = { tiktok: "var(--series-1)", youtube: "var(--series-2)" };
-  const lines = ps.map(p => `<path d="${rows.map((r, i) => `${i ? "L" : "M"}${x(i).toFixed(1)},${y(r[p]).toFixed(1)}`).join("")}" fill="none" stroke="${colors[p]}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>`).join("");
-  const last = ps.map(p => { const i = rows.length - 1; return `<text x="${x(i) - 4}" y="${y(rows[i][p]) - 8}" text-anchor="end" fill="var(--text-secondary)" font-size="11" font-weight="600">${compact.format(rows[i][p])}</text>`; }).join("");
-  el.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Views pro Tag nach Plattform">
-    <g class="axis">${ticks.map(t => `<line class="gridline" x1="${m.l}" x2="${W - m.r}" y1="${y(t)}" y2="${y(t)}"/><text x="${m.l - 8}" y="${y(t) + 4}" text-anchor="end">${compact.format(t)}</text>`).join("")}
-    ${rows.map((r, i) => i % step === 0 ? `<text x="${x(i)}" y="${H - 6}" text-anchor="middle">${r.day.slice(8, 10)}.${r.day.slice(5, 7)}.</text>` : "").join("")}</g>
-    ${lines}${last}
-    <line id="xh" y1="${m.t}" y2="${m.t + ih}" stroke="var(--text-muted)" stroke-width="1" stroke-dasharray="3 3" opacity="0"/>
-    ${ps.map(p => `<circle class="mk" data-p="${p}" r="4.5" fill="${colors[p]}" stroke="var(--surface-1)" stroke-width="2" opacity="0"/>`).join("")}
-    <rect x="${m.l}" y="${m.t}" width="${iw}" height="${ih}" fill="transparent" id="hit"/>
-  </svg>`;
-  const svg = el.querySelector("svg"), tip = document.getElementById("tip");
-  const hide = () => { tip.style.opacity = 0; svg.querySelector("#xh").setAttribute("opacity", 0); svg.querySelectorAll(".mk").forEach(c => c.setAttribute("opacity", 0)); };
-  svg.querySelector("#hit").addEventListener("pointermove", e => {
-    const r = svg.getBoundingClientRect(), px = (e.clientX - r.left) * (W / r.width);
-    const i = Math.max(0, Math.min(rows.length - 1, Math.round((px - m.l) / iw * (rows.length - 1))));
-    const row = rows[i];
-    svg.querySelector("#xh").setAttribute("x1", x(i)); svg.querySelector("#xh").setAttribute("x2", x(i)); svg.querySelector("#xh").setAttribute("opacity", 1);
-    svg.querySelectorAll(".mk").forEach(c => { c.setAttribute("cx", x(i)); c.setAttribute("cy", y(row[c.dataset.p])); c.setAttribute("opacity", 1); });
-    tip.innerHTML = `<div class="t">${new Date(row.day).toLocaleDateString("de-DE", { weekday: "short", day: "2-digit", month: "2-digit" })}</div>` +
-      ps.map(p => `<div class="r"><span><span class="dot ${p === "tiktok" ? "tt" : "yt"}"></span>${PLAT[p]}</span><b>${n(row[p])}</b></div>`).join("");
-    const left = r.left + window.scrollX + x(i) * (r.width / W);
-    tip.style.left = Math.min(left + 12, window.scrollX + document.documentElement.clientWidth - tip.offsetWidth - 16) + "px";
-    tip.style.top = (r.top + window.scrollY + 8) + "px";
-    tip.style.opacity = 1;
-  });
-  svg.querySelector("#hit").addEventListener("pointerleave", hide);
 }
 
 function statusOf(t) {
   if (!t) return "";
   if (t.status === "sent") return `<span class="status ok">live</span>`;
   if (t.status === "error") return `<span class="status err">Fehler</span>`;
-  return `<span class="status wait">${t.status === "scheduled" || t.status === "buffer" ? "geplant" : "wird gesendet"}</span>`;
+  return `<span class="status wait">geplant</span>`;
 }
-
-function platRow(p, d) {
+function platRow(k, d) {
   if (!d) return "";
-  const link = d.url ? `<a href="${esc(d.url)}" target="_blank" rel="noopener">${PLAT[p]} ↗</a>` : `<span>${PLAT[p]}</span>`;
-  return `<div class="plat"><span class="dot ${p === "tiktok" ? "tt" : "yt"}"></span>${link}
-    <span class="nums"><span title="Views">▶ <b>${compact.format(d.views || 0)}</b></span><span title="Likes">♥ <b>${compact.format(d.likes || 0)}</b></span><span title="Kommentare">💬 <b>${compact.format(d.comments || 0)}</b></span></span></div>`;
+  const inner = `<span class="name"><span class="dot ${dotCls(k)}"></span>${PLAT[k]}</span><span class="nums"><span>▶ <b>${c(d.views)}</b></span><span>♥ <b>${c(d.likes)}</b></span></span>`;
+  return d.url ? `<a class="plat" href="${esc(d.url)}" target="_blank" rel="noopener">${inner}</a>` : `<div class="plat">${inner}</div>`;
 }
-
 function renderVideos() {
   const ps = plats();
-  let posts = channels().flatMap(c => c.posts.map(p => ({ ...p, ch: c.name }))).filter(p => ps.some(k => p[k]));
-  if (state.sort === "views") posts.sort((a, b) => postViews(b) - postViews(a));
-  else if (state.sort === "likes") posts.sort((a, b) => postLikes(b) - postLikes(a));
-  else posts.sort((a, b) => (b.created_at || "").localeCompare(a.created_at || ""));
+  let posts = channels().flatMap(ch => ch.posts.map(p => ({ ...p, ch: ch.name }))).filter(p => ps.some(k => p[k]));
+  const when = p => p.tiktok?.published_at || p.created_at || "";
+  if (state.sort === "views") posts.sort((a, b) => pv(b) - pv(a));
+  else if (state.sort === "likes") posts.sort((a, b) => pl(b) - pl(a));
+  else posts.sort((a, b) => new Date(when(b)) - new Date(when(a)));
   document.getElementById("vid-title").textContent = `Videos (${posts.length})`;
   document.getElementById("videos").innerHTML = posts.length ? posts.map(p => `
     <article class="card vid">
       <div class="thumb">
-        ${p.thumb ? `<img src="${esc(p.thumb)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}
         <div class="ph">${esc(p.ch)}</div>
+        ${p.thumb ? `<img src="${esc(p.thumb)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}
         <div class="badges"><span class="badge ${p.kind}">${KIND[p.kind] || p.kind}</span><span class="badge">${esc(p.ch)}</span></div>
+        <div class="views-over">▶ ${c(pv(p))}</div>
       </div>
       <div class="vid-body">
         <div class="vid-title">${esc(p.title)}</div>
-        <div class="vid-meta">${fmtDate(p.tiktok?.published_at || p.created_at, { weekday: "short", day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" })} ${statusOf(p.tiktok)}</div>
+        <div class="vid-meta">${fmtDate(when(p), { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" })} ${statusOf(p.tiktok)}</div>
         ${ps.map(k => platRow(k, p[k])).join("")}
-        ${p.clips?.length ? `<details class="clips"><summary>${p.clips.length === 1 ? "Original-Clip" : `${p.clips.length} Original-Clips`}</summary><ol ${p.kind === "top5" ? 'reversed' : ""}>${
-          (p.kind === "top5" ? [...p.clips].reverse() : p.clips).map(c => `<li><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.title)}</a> · ${compact.format(c.views || 0)} Views</li>`).join("")}</ol></details>` : ""}
+        ${p.clips?.length ? `<details class="clips"><summary>${p.clips.length === 1 ? "Original-Clip" : `${p.clips.length} Clips`}</summary><ol>${
+          (p.kind === "top5" ? [...p.clips].reverse() : p.clips).map(cl => `<li><a href="${esc(cl.url)}" target="_blank" rel="noopener">${esc(cl.title)}</a> · ${c(cl.views)}</li>`).join("")}</ol></details>` : ""}
       </div>
     </article>`).join("") : `<div class="empty">Noch keine Videos für diese Auswahl.</div>`;
 }
 
+function seg(el, items, key) {
+  el.innerHTML = items.map(([v, l]) => `<button data-v="${v}" aria-pressed="${state[key] === v}">${esc(l)}</button>`).join("");
+  el.onclick = e => { const b = e.target.closest("button"); if (!b) return; state[key] = b.dataset.v; render(); };
+}
+function renderHead() {
+  const live = document.getElementById("live");
+  live.className = "live" + (state.liveAt ? "" : " off");
+  live.textContent = state.liveAt ? `Live · ${fmtDate(state.liveAt, { hour: "2-digit", minute: "2-digit" })}` : "Live aus";
+  document.getElementById("meta").textContent = `Bot-Daten ${ago(state.data.updated)} · TikTok-Zahlen ca. täglich`;
+}
 function render() {
-  seg(document.getElementById("f-channel"), [["all", "Alle"], ...state.data.channels.map(c => [c.id, c.name])], "channel");
+  seg(document.getElementById("f-channel"), [["all", "Alle"], ...state.data.channels.map(ch => [ch.id, ch.name])], "channel");
   document.querySelectorAll("#f-platform button").forEach(b => b.setAttribute("aria-pressed", b.dataset.v === state.platform));
-  renderNotices(); renderKpis(); renderChannels(); renderChart(); renderVideos();
-  renderUpdated();
+  renderHead(); renderKpis(); renderLine(); renderBars(); renderChannels(); renderVideos();
 }
 
-function renderUpdated() {
-  const u = state.data.updated, l = state.live;
-  const liveTxt = l ? `<span class="live">YouTube live · ${fmtDate(l, { hour: "2-digit", minute: "2-digit", second: "2-digit" })}</span>`
-                    : `<span class="live off">YouTube live aus</span>`;
-  document.getElementById("updated").innerHTML = `${liveTxt}<br>Bot-Daten ${ago(u)} · TikTok über Buffer (ca. täglich)`;
-}
-
-// Live YouTube numbers straight from the YouTube Data API (key is restricted to this page)
 async function liveYoutube() {
-  const key = state.data?.youtube_key;
-  if (!key) return false;
-  const posts = state.data.channels.flatMap(c => c.posts).filter(p => p.youtube?.id);
-  const ids = [...new Set(posts.map(p => p.youtube.id))];
+  const key = state.data?.youtube_key; if (!key) return false;
+  const ids = [...new Set(state.data.channels.flatMap(ch => ch.posts).filter(p => p.youtube?.id).map(p => p.youtube.id))];
   const stats = {};
   for (let i = 0; i < ids.length; i += 50) {
     const r = await fetch(`https://www.googleapis.com/youtube/v3/videos?part=statistics&id=${ids.slice(i, i + 50).join(",")}&key=${key}`, YT_FETCH);
     if (!r.ok) return false;
     for (const v of (await r.json()).items || []) stats[v.id] = v.statistics;
   }
-  for (const c of state.data.channels) {
+  const now = Date.now();
+  for (const ch of state.data.channels) {
     const t = { views: 0, likes: 0, comments: 0, shares: 0, posts: 0 };
-    for (const p of c.posts) {
-      const s = p.youtube && stats[p.youtube.id];
-      if (!s) continue;
+    for (const p of ch.posts) {
+      const s = p.youtube && stats[p.youtube.id]; if (!s) continue;
       Object.assign(p.youtube, { views: +s.viewCount || 0, likes: +s.likeCount || 0, comments: +s.commentCount || 0 });
       t.views += p.youtube.views; t.likes += p.youtube.likes; t.comments += p.youtube.comments; t.posts++;
     }
-    if (t.posts) c.totals.youtube = t;
+    if (t.posts) ch.totals.youtube = t;
+    (state.live[ch.id] ??= []).push({ t: now, youtube: ch.totals.youtube.views, tiktok: ch.totals.tiktok.views });
   }
-  const chIds = state.data.channels.map(c => c.youtube?.id).filter(Boolean);
+  const chIds = state.data.channels.map(ch => ch.youtube?.id).filter(Boolean);
   if (chIds.length) {
     const r = await fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${chIds.join(",")}&key=${key}`, YT_FETCH);
     if (r.ok) for (const it of (await r.json()).items || []) {
-      const c = state.data.channels.find(c => c.youtube?.id === it.id);
-      if (c) c.youtube.subscribers = +it.statistics.subscriberCount || 0;
+      const ch = state.data.channels.find(x => x.youtube?.id === it.id); if (ch) ch.youtube.subscribers = +it.statistics.subscriberCount || 0;
     }
   }
+  try { localStorage.setItem("clipbot-live", JSON.stringify(state.live)); } catch (e) {}
   return true;
 }
-
 async function refresh() {
   try {
     const d = await (await fetch("data.json?t=" + Date.now())).json();
     state.data = d;
-    state.live = (await liveYoutube().catch(() => false)) ? new Date().toISOString() : null;
+    // live points older than the latest bot snapshot are covered by the snapshots
+    const lastSnap = Math.max(0, ...d.channels.flatMap(ch => (ch.snapshots || []).map(s => new Date(s.ts).getTime())));
+    for (const id in state.live) state.live[id] = state.live[id].filter(p => p.t > lastSnap).slice(-720);
+    state.liveAt = (await liveYoutube().catch(() => false)) ? new Date().toISOString() : null;
     render();
   } catch (e) {
-    if (!state.data) document.getElementById("updated").textContent = "Daten konnten nicht geladen werden";
+    if (!state.data) document.getElementById("live").textContent = "Daten nicht erreichbar";
   }
 }
-
+try { state.live = JSON.parse(localStorage.getItem("clipbot-live") || "{}"); } catch (e) { state.live = {}; }
 document.getElementById("f-platform").onclick = e => { const b = e.target.closest("button"); if (!b) return; state.platform = b.dataset.v; render(); };
 document.getElementById("sort").onchange = e => { state.sort = e.target.value; renderVideos(); };
-window.addEventListener("resize", () => state.data && renderChart());
-
+let rz; window.addEventListener("resize", () => { clearTimeout(rz); rz = setTimeout(() => state.data && (renderLine(), renderBars()), 150); });
+document.addEventListener("scroll", hideTip, { passive: true });
 refresh();
 setInterval(() => { if (!document.hidden) refresh(); }, REFRESH_MS);
 document.addEventListener("visibilitychange", () => { if (!document.hidden) refresh(); });

@@ -1,8 +1,8 @@
 {
- "updated": "2026-10-02T22:11:11+00:00",
+ "updated": "2026-10-02T22:15:44+00:00",
  "timezone": "Europe/Berlin",
- "youtube_stats": false,
- "youtube_key": "",
+ "youtube_stats": true,
+ "youtube_key": "AIzaSyAY-nYwQbXQiKofpEMcVioPy09fCu7wgu8",
  "channels": [
   {
    "id": "marli",
@@ -14,7 +14,13 @@
     "handle": "marli.clips6367",
     "url": "https://www.tiktok.com/@marli.clips6367"
    },
-   "youtube": {},
+   "youtube": {
+    "id": "UCIWkUwzN4uevgMCFzDdwxyQ",
+    "subscribers": 1,
+    "title": "marliclip",
+    "url": "https://www.youtube.com/channel/UCIWkUwzN4uevgMCFzDdwxyQ",
+    "avatar": "https://yt3.ggpht.com/rPPYwl-Ou9-KhXfYlwitCbEB2K2LM8iUZlcc1x3qo5W5KvMoGkhjHu2E2qtSg3km9Xui8iSWyw=s88-c-k-c0x00ffffff-no-rj"
+   },
    "slots": [
     {
      "time": "12:30",
@@ -38,11 +44,11 @@
      "posts": 2
     },
     "youtube": {
-     "views": 0,
-     "likes": 0,
+     "views": 267,
+     "likes": 4,
      "comments": 0,
      "shares": 0,
-     "posts": 0
+     "posts": 1
     }
    },
    "history": [
@@ -58,11 +64,11 @@
     {
      "day": "2026-10-03",
      "platform": "youtube",
-     "views": 0,
-     "likes": 0,
+     "views": 267,
+     "likes": 4,
      "comments": 0,
      "shares": 0,
-     "posts": 0
+     "posts": 1
     }
    ],
    "posts": [
@@ -91,13 +97,13 @@
      "youtube": {
       "id": "i8Pm8VBaEWc",
       "url": "https://youtube.com/shorts/i8Pm8VBaEWc",
-      "privacy": null,
-      "views": 0,
-      "likes": 0,
+      "privacy": "public",
+      "views": 267,
+      "likes": 4,
       "comments": 0,
       "shares": 0
      },
-     "thumb": "https://p16-common-sign.tiktokcdn-eu.com/tos-useast2a-p-4864-euttp/oc1lDzfDmIeABCqwzJJLrw2CABAEwEPgFDK6IQ~tplv-tiktokx-origin.image?dr=10395&x-expires=1791151200&x-signature=uuGEaDczCKTSv7c2ZHIb9RqJgMw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a"
+     "thumb": "https://p19-common-sign.tiktokcdn-eu.com/tos-useast2a-p-4864-euttp/oc1lDzfDmIeABCqwzJJLrw2CABAEwEPgFDK6IQ~tplv-tiktokx-origin.image?dr=10395&x-expires=1791151200&x-signature=8xxNow6fPfFd%2BFobcCIK3rpbFP0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a"
     },
     {
      "kind": "top5",
@@ -156,7 +162,13 @@
     "handle": "willyclips6367",
     "url": "https://www.tiktok.com/@willyclips6367"
    },
-   "youtube": {},
+   "youtube": {
+    "id": "UCYNrCMmyoo4iVKJWEXYvG7A",
+    "subscribers": 0,
+    "title": "willyclip",
+    "url": "https://www.youtube.com/channel/UCYNrCMmyoo4iVKJWEXYvG7A",
+    "avatar": "https://yt3.ggpht.com/8iK_09h4ESf15_vXkKAmj_ipPQGeaVoqR8E6JJ-ziFjuJexYar9NL979CXPAbZBXjebM4Mpwteo=s88-c-k-c0x00ffffff-no-rj"
+   },
    "slots": [
     {
      "time": "12:30",
@@ -180,11 +192,11 @@
      "posts": 2
     },
     "youtube": {
-     "views": 0,
+     "views": 8,
      "likes": 0,
      "comments": 0,
      "shares": 0,
-     "posts": 0
+     "posts": 1
     }
    },
    "history": [
@@ -200,11 +212,11 @@
     {
      "day": "2026-10-03",
      "platform": "youtube",
-     "views": 0,
+     "views": 8,
      "likes": 0,
      "comments": 0,
      "shares": 0,
-     "posts": 0
+     "posts": 1
     }
    ],
    "posts": [
@@ -233,8 +245,8 @@
      "youtube": {
       "id": "w1qx65J1bhc",
       "url": "https://youtube.com/shorts/w1qx65J1bhc",
-      "privacy": null,
-      "views": 0,
+      "privacy": "public",
+      "views": 8,
       "likes": 0,
       "comments": 0,
       "shares": 0

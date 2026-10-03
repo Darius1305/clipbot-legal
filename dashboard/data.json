@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02T22:31:01+00:00",
+ "updated": "2026-10-03T12:39:01+00:00",
  "timezone": "Europe/Berlin",
  "youtube_stats": true,
  "youtube_key": "AIzaSyAY-nYwQbXQiKofpEMcVioPy09fCu7wgu8",
@@ -41,14 +41,14 @@
      "likes": 0,
      "comments": 0,
      "shares": 0,
-     "posts": 2
+     "posts": 3
     },
     "youtube": {
-     "views": 921,
-     "likes": 9,
+     "views": 1775,
+     "likes": 10,
      "comments": 1,
      "shares": 0,
-     "posts": 2
+     "posts": 3
     }
    },
    "history": [
@@ -59,16 +59,16 @@
      "likes": 0,
      "comments": 0,
      "shares": 0,
-     "posts": 2
+     "posts": 3
     },
     {
      "day": "2026-10-03",
      "platform": "youtube",
-     "views": 921,
-     "likes": 9,
+     "views": 1775,
+     "likes": 10,
      "comments": 1,
      "shares": 0,
-     "posts": 2
+     "posts": 3
     }
    ],
    "snapshots": [
@@ -127,9 +127,56 @@
      "views": 921,
      "likes": 9,
      "comments": 1
+    },
+    {
+     "ts": "2026-10-03T12:39+00:00",
+     "platform": "tiktok",
+     "views": 0,
+     "likes": 0,
+     "comments": 0
+    },
+    {
+     "ts": "2026-10-03T12:39+00:00",
+     "platform": "youtube",
+     "views": 1775,
+     "likes": 10,
+     "comments": 1
     }
    ],
    "posts": [
+    {
+     "kind": "random",
+     "slot": "12:30",
+     "title": "Der Gregoritsch und der Pavlovic",
+     "clips": [
+      {
+       "title": "Der Gregoritsch und der Pavlovic",
+       "url": "https://www.twitch.tv/marli/clip/WisePlacidWerewolfEagleEye-PSGR_bHWUsPM6VcZ",
+       "views": 5570
+      }
+     ],
+     "created_at": "2026-10-03T12:32:57+00:00",
+     "tiktok": {
+      "status": "sent",
+      "url": "https://www.tiktok.com/@marli.clips6367/video/7692418637453413665",
+      "published_at": "2026-10-03T12:34:29.629Z",
+      "metrics_at": "2026-10-03T12:32:46.113Z",
+      "views": 0,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+     },
+     "youtube": {
+      "id": "Ej3_x5QHrmc",
+      "url": "https://youtube.com/shorts/Ej3_x5QHrmc",
+      "privacy": "public",
+      "views": 1,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+     },
+     "thumb": "https://p19-common-sign.tiktokcdn-eu.com/tos-useast2a-p-4864-euttp/oEYguIs2vD82BCi9i5mIDA5D0AMaBZ1KgBXxC~tplv-tiktokx-origin.image?dr=10395&x-expires=1791201600&x-signature=GIEUcoV6RrJ0mrhEnXvCGqHVbkY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a"
+    },
     {
      "kind": "random",
      "slot": null,
@@ -156,12 +203,12 @@
       "id": "i8Pm8VBaEWc",
       "url": "https://youtube.com/shorts/i8Pm8VBaEWc",
       "privacy": "public",
-      "views": 267,
+      "views": 518,
       "likes": 4,
       "comments": 0,
       "shares": 0
      },
-     "thumb": "https://p16-common-sign.tiktokcdn-eu.com/tos-useast2a-p-4864-euttp/oc1lDzfDmIeABCqwzJJLrw2CABAEwEPgFDK6IQ~tplv-tiktokx-origin.image?dr=10395&x-expires=1791151200&x-signature=uuGEaDczCKTSv7c2ZHIb9RqJgMw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a"
+     "thumb": "https://p16-common-sign.tiktokcdn-eu.com/tos-useast2a-p-4864-euttp/oc1lDzfDmIeABCqwzJJLrw2CABAEwEPgFDK6IQ~tplv-tiktokx-origin.image?dr=10395&x-expires=1791201600&x-signature=Ao81EWzy9iP63Ajyaz8QsARZHDk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a"
     },
     {
      "kind": "top5",
@@ -206,7 +253,7 @@
       "shares": 0
      },
      "youtube": null,
-     "thumb": "https://p16-common-sign.tiktokcdn-eu.com/tos-useast2a-p-4864-euttp/oMMGIjReITwEQgLgVn1JeFCeHvSDDnggAQGbMl~tplv-tiktokx-origin.image?dr=10395&x-expires=1791151200&x-signature=gsSH5DIp1NUvx%2BsMFVdJfi0HZ%2Bk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a"
+     "thumb": "https://p16-common-sign.tiktokcdn-eu.com/tos-useast2a-p-4864-euttp/oMMGIjReITwEQgLgVn1JeFCeHvSDDnggAQGbMl~tplv-tiktokx-origin.image?dr=10395&x-expires=1791201600&x-signature=jrSS3MKn9nnJYtUb4JWMhAPkEAE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a"
     },
     {
      "kind": "extern",
@@ -219,8 +266,8 @@
       "id": "1Bd2V7toxUE",
       "url": "https://youtube.com/shorts/1Bd2V7toxUE",
       "privacy": "public",
-      "views": 654,
-      "likes": 5,
+      "views": 1256,
+      "likes": 6,
       "comments": 1,
       "shares": 0
      },
@@ -238,13 +285,7 @@
     "handle": "willyclips6367",
     "url": "https://www.tiktok.com/@willyclips6367"
    },
-   "youtube": {
-    "id": "UCYNrCMmyoo4iVKJWEXYvG7A",
-    "subscribers": 0,
-    "title": "willyclip",
-    "url": "https://www.youtube.com/channel/UCYNrCMmyoo4iVKJWEXYvG7A",
-    "avatar": "https://yt3.ggpht.com/8iK_09h4ESf15_vXkKAmj_ipPQGeaVoqR8E6JJ-ziFjuJexYar9NL979CXPAbZBXjebM4Mpwteo=s88-c-k-c0x00ffffff-no-rj"
-   },
+   "youtube": {},
    "slots": [
     {
      "time": "12:30",
@@ -265,14 +306,14 @@
      "likes": 0,
      "comments": 0,
      "shares": 0,
-     "posts": 2
+     "posts": 3
     },
     "youtube": {
-     "views": 8,
+     "views": 0,
      "likes": 0,
      "comments": 0,
      "shares": 0,
-     "posts": 1
+     "posts": 0
     }
    },
    "history": [
@@ -283,16 +324,16 @@
      "likes": 0,
      "comments": 0,
      "shares": 0,
-     "posts": 2
+     "posts": 3
     },
     {
      "day": "2026-10-03",
      "platform": "youtube",
-     "views": 8,
+     "views": 0,
      "likes": 0,
      "comments": 0,
      "shares": 0,
-     "posts": 1
+     "posts": 0
     }
    ],
    "snapshots": [
@@ -351,9 +392,48 @@
      "views": 8,
      "likes": 0,
      "comments": 0
+    },
+    {
+     "ts": "2026-10-03T12:39+00:00",
+     "platform": "tiktok",
+     "views": 0,
+     "likes": 0,
+     "comments": 0
+    },
+    {
+     "ts": "2026-10-03T12:39+00:00",
+     "platform": "youtube",
+     "views": 0,
+     "likes": 0,
+     "comments": 0
     }
    ],
    "posts": [
+    {
+     "kind": "random",
+     "slot": "12:30",
+     "title": "Warum Willy nicht dabei ist",
+     "clips": [
+      {
+       "title": "Warum Willy nicht dabei ist",
+       "url": "https://www.twitch.tv/niklaswilson/clip/BlazingBetterScallionBleedPurple-2Mr47_IOadt-cKWM",
+       "views": 5745
+      }
+     ],
+     "created_at": "2026-10-03T12:35:14+00:00",
+     "tiktok": {
+      "status": "sent",
+      "url": "https://www.tiktok.com/@willyclips6367/video/7692419241823243553",
+      "published_at": "2026-10-03T12:36:50.003Z",
+      "metrics_at": "2026-10-03T12:35:03.175Z",
+      "views": 0,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+     },
+     "youtube": null,
+     "thumb": "https://p16-common-sign.tiktokcdn-eu.com/tos-useast2a-p-4864-euttp/o021HZD7QFEZQ5BwQFEmr9wfD0PdfB3Aq8pzQI~tplv-tiktokx-origin.image?dr=10395&x-expires=1791201600&x-signature=zKEv0kUFcPnVLsRc%2B%2Bn%2BPnfZ6Nw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a"
+    },
     {
      "kind": "random",
      "slot": null,
@@ -379,13 +459,13 @@
      "youtube": {
       "id": "w1qx65J1bhc",
       "url": "https://youtube.com/shorts/w1qx65J1bhc",
-      "privacy": "public",
-      "views": 8,
+      "privacy": null,
+      "views": 0,
       "likes": 0,
       "comments": 0,
       "shares": 0
      },
-     "thumb": "https://p16-common-sign.tiktokcdn-eu.com/tos-useast2a-p-4864-euttp/ooAdMZvqIigAB355l3nizBKIADaJ00YBv9Ds2~tplv-tiktokx-origin.image?dr=10395&x-expires=1791151200&x-signature=noAei3M8P6M4C1ue0BjLHh9vggE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a"
+     "thumb": "https://p16-common-sign.tiktokcdn-eu.com/tos-useast2a-p-4864-euttp/ooAdMZvqIigAB355l3nizBKIADaJ00YBv9Ds2~tplv-tiktokx-origin.image?dr=10395&x-expires=1791201600&x-signature=q1SRiAkaA4Pkb3rPtDDZplJlezM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a"
     },
     {
      "kind": "random",

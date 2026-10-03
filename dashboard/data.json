@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-03T19:13:23+00:00",
+ "updated": "2026-10-03T19:43:27+00:00",
  "timezone": "Europe/Berlin",
  "youtube_stats": true,
  "youtube_key": "AIzaSyAY-nYwQbXQiKofpEMcVioPy09fCu7wgu8",
@@ -37,7 +37,7 @@
    ],
    "totals": {
     "tiktok": {
-     "views": 0,
+     "views": 7,
      "likes": 0,
      "comments": 0,
      "shares": 0,
@@ -55,7 +55,7 @@
     {
      "day": "2026-10-03",
      "platform": "tiktok",
-     "views": 0,
+     "views": 7,
      "likes": 0,
      "comments": 0,
      "shares": 0,
@@ -351,6 +351,20 @@
      "views": 1812,
      "likes": 10,
      "comments": 1
+    },
+    {
+     "ts": "2026-10-03T19:43+00:00",
+     "platform": "tiktok",
+     "views": 7,
+     "likes": 0,
+     "comments": 0
+    },
+    {
+     "ts": "2026-10-03T19:43+00:00",
+     "platform": "youtube",
+     "views": 1812,
+     "likes": 10,
+     "comments": 1
     }
    ],
    "posts": [
@@ -390,7 +404,7 @@
       "status": "sent",
       "url": "https://www.tiktok.com/@marli.clips6367/video/7692503074669071649",
       "published_at": "2026-10-03T18:02:02.844Z",
-      "metrics_at": "2026-10-03T17:19:12.620Z",
+      "metrics_at": "2026-10-03T19:13:35.916Z",
       "views": 0,
       "likes": 0,
       "comments": 0,
@@ -400,12 +414,12 @@
       "id": "NBNxZj2ONYE",
       "url": "https://youtube.com/shorts/NBNxZj2ONYE",
       "privacy": "public",
-      "views": 0,
+      "views": 1,
       "likes": 0,
       "comments": 0,
       "shares": 0
      },
-     "thumb": "https://p19-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/oYbCEiggIlGJgMxLofDlWVhVEVoGDgLegcZdeS~tplv-tiktokx-origin.image?dr=9636&x-expires=1791226800&x-signature=GlFUFABingn%2FIH6oBFO9BGRSBf8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+     "thumb": "https://p19-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/oYbCEiggIlGJgMxLofDlWVhVEVoGDgLegcZdeS~tplv-tiktokx-origin.image?dr=9636&x-expires=1791226800&x-signature=GlFUFABingn%2FIH6oBFO9BGRSBf8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     },
     {
      "kind": "random",
@@ -423,7 +437,7 @@
       "status": "sent",
       "url": "https://www.tiktok.com/@marli.clips6367/video/7692456610920221984",
       "published_at": "2026-10-03T15:02:59.763Z",
-      "metrics_at": "2026-10-03T14:14:10.591Z",
+      "metrics_at": "2026-10-03T19:13:35.916Z",
       "views": 0,
       "likes": 0,
       "comments": 0,
@@ -438,7 +452,7 @@
       "comments": 0,
       "shares": 0
      },
-     "thumb": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/okm0wieBnQUDwMoDEqRQphDyF8fFEBRL2QtCoo~tplv-tiktokx-origin.image?dr=9636&x-expires=1791226800&x-signature=T6bb46zUhkTpzAj7CXBe%2FC9NFEs%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+     "thumb": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/okm0wieBnQUDwMoDEqRQphDyF8fFEBRL2QtCoo~tplv-tiktokx-origin.image?dr=9636&x-expires=1791226800&x-signature=T6bb46zUhkTpzAj7CXBe%2FC9NFEs%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     },
     {
      "kind": "random",
@@ -456,7 +470,7 @@
       "status": "sent",
       "url": "https://www.tiktok.com/@marli.clips6367/video/7692418637453413665",
       "published_at": "2026-10-03T12:34:29.629Z",
-      "metrics_at": "2026-10-03T12:32:46.113Z",
+      "metrics_at": "2026-10-03T19:13:35.916Z",
       "views": 0,
       "likes": 0,
       "comments": 0,
@@ -471,7 +485,7 @@
       "comments": 0,
       "shares": 0
      },
-     "thumb": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/oEYguIs2vD82BCi9i5mIDA5D0AMaBZ1KgBXxC~tplv-tiktokx-origin.image?dr=9636&x-expires=1791226800&x-signature=HY66wnTY%2Bnkmp4sorv7Pg6o6TDQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+     "thumb": "https://p19-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/oEYguIs2vD82BCi9i5mIDA5D0AMaBZ1KgBXxC~tplv-tiktokx-origin.image?dr=9636&x-expires=1791226800&x-signature=yIxz8m7NirHdNB8ekJaRnZoVRoQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     },
     {
      "kind": "random",
@@ -489,8 +503,8 @@
       "status": "sent",
       "url": "https://www.tiktok.com/@marli.clips6367/video/7692187777592479009",
       "published_at": "2026-10-02T21:38:41.143Z",
-      "metrics_at": "2026-10-02T21:36:57.382Z",
-      "views": 0,
+      "metrics_at": "2026-10-03T19:13:35.916Z",
+      "views": 4,
       "likes": 0,
       "comments": 0,
       "shares": 0
@@ -504,7 +518,7 @@
       "comments": 0,
       "shares": 0
      },
-     "thumb": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/oc1lDzfDmIeABCqwzJJLrw2CABAEwEPgFDK6IQ~tplv-tiktokx-origin.image?dr=9636&x-expires=1791226800&x-signature=kV8vtNycBj3g8C7H%2FnIiLAefAzY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+     "thumb": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/oc1lDzfDmIeABCqwzJJLrw2CABAEwEPgFDK6IQ~tplv-tiktokx-origin.image?dr=9636&x-expires=1791226800&x-signature=kV8vtNycBj3g8C7H%2FnIiLAefAzY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     },
     {
      "kind": "top5",
@@ -542,14 +556,14 @@
       "status": "sent",
       "url": "https://www.tiktok.com/@marli.clips6367/video/7692172369422535968",
       "published_at": "2026-10-02T20:38:46.782Z",
-      "metrics_at": "2026-10-02T20:37:02.912Z",
-      "views": 0,
+      "metrics_at": "2026-10-03T19:13:35.916Z",
+      "views": 3,
       "likes": 0,
       "comments": 0,
       "shares": 0
      },
      "youtube": null,
-     "thumb": "https://p19-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/oMMGIjReITwEQgLgVn1JeFCeHvSDDnggAQGbMl~tplv-tiktokx-origin.image?dr=9636&x-expires=1791226800&x-signature=jPr9h6XJfgNTADo8ZkFj9Jt5d60%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+     "thumb": "https://p19-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/oMMGIjReITwEQgLgVn1JeFCeHvSDDnggAQGbMl~tplv-tiktokx-origin.image?dr=9636&x-expires=1791226800&x-signature=jPr9h6XJfgNTADo8ZkFj9Jt5d60%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     },
     {
      "kind": "extern",
@@ -562,7 +576,7 @@
       "id": "1Bd2V7toxUE",
       "url": "https://youtube.com/shorts/1Bd2V7toxUE",
       "privacy": "public",
-      "views": 1279,
+      "views": 1278,
       "likes": 6,
       "comments": 1,
       "shares": 0
@@ -918,6 +932,20 @@
      "views": 11,
      "likes": 0,
      "comments": 0
+    },
+    {
+     "ts": "2026-10-03T19:43+00:00",
+     "platform": "tiktok",
+     "views": 0,
+     "likes": 0,
+     "comments": 0
+    },
+    {
+     "ts": "2026-10-03T19:43+00:00",
+     "platform": "youtube",
+     "views": 11,
+     "likes": 0,
+     "comments": 0
     }
    ],
    "posts": [
@@ -964,7 +992,7 @@
       "shares": 0
      },
      "youtube": null,
-     "thumb": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/oAI0Fpsiv6C8aBgjNZDAIDB1MQPr0BXsyPisa~tplv-tiktokx-origin.image?dr=9636&x-expires=1791226800&x-signature=a%2FLJkx5XVnAf1%2BhxrLQ%2BWReOiYA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+     "thumb": "https://p19-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/oAI0Fpsiv6C8aBgjNZDAIDB1MQPr0BXsyPisa~tplv-tiktokx-origin.image?dr=9636&x-expires=1791226800&x-signature=ybTRkwgyXvztvIXAZRxZyjJ3PRo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     },
     {
      "kind": "random",
@@ -989,7 +1017,7 @@
       "shares": 0
      },
      "youtube": null,
-     "thumb": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/okGgMQ5QGODDjDMtgIeRJfEquLLULVGgBfED9C~tplv-tiktokx-origin.image?dr=9636&x-expires=1791226800&x-signature=BwW5YEYn7Aj2aTAEThilMXkoskk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+     "thumb": "https://p19-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/okGgMQ5QGODDjDMtgIeRJfEquLLULVGgBfED9C~tplv-tiktokx-origin.image?dr=9636&x-expires=1791226800&x-signature=v2c%2BxQiZ7%2BX42lSWfGQjvCF21kM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     },
     {
      "kind": "random",
@@ -1014,7 +1042,7 @@
       "shares": 0
      },
      "youtube": null,
-     "thumb": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/o021HZD7QFEZQ5BwQFEmr9wfD0PdfB3Aq8pzQI~tplv-tiktokx-origin.image?dr=9636&x-expires=1791226800&x-signature=%2FU7b6OiWg2aoRwry98HhhDgJJMk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+     "thumb": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/o021HZD7QFEZQ5BwQFEmr9wfD0PdfB3Aq8pzQI~tplv-tiktokx-origin.image?dr=9636&x-expires=1791226800&x-signature=%2FU7b6OiWg2aoRwry98HhhDgJJMk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     },
     {
      "kind": "random",
@@ -1116,8 +1144,8 @@
      "posts": 2
     },
     "youtube": {
-     "views": 38,
-     "likes": 1,
+     "views": 60,
+     "likes": 2,
      "comments": 0,
      "shares": 0,
      "posts": 2
@@ -1136,8 +1164,8 @@
     {
      "day": "2026-10-03",
      "platform": "youtube",
-     "views": 38,
-     "likes": 1,
+     "views": 60,
+     "likes": 2,
      "comments": 0,
      "shares": 0,
      "posts": 2
@@ -1311,6 +1339,20 @@
      "views": 38,
      "likes": 1,
      "comments": 0
+    },
+    {
+     "ts": "2026-10-03T19:43+00:00",
+     "platform": "tiktok",
+     "views": 0,
+     "likes": 0,
+     "comments": 0
+    },
+    {
+     "ts": "2026-10-03T19:43+00:00",
+     "platform": "youtube",
+     "views": 60,
+     "likes": 2,
+     "comments": 0
     }
    ],
    "posts": [
@@ -1365,7 +1407,7 @@
       "comments": 0,
       "shares": 0
      },
-     "thumb": "https://p19-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/oIhdQUjpDQfsmB6KEWFGmQBw1BfVqKDQESQVww~tplv-tiktokx-origin.image?dr=9636&x-expires=1791226800&x-signature=6nXqe2vjxNrICNSy2vvwNdu4ANE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+     "thumb": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/oIhdQUjpDQfsmB6KEWFGmQBw1BfVqKDQESQVww~tplv-tiktokx-origin.image?dr=9636&x-expires=1791226800&x-signature=e1NZSQbAN4r08KjhYZZQBXfL7zo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     },
     {
      "kind": "random",
@@ -1393,12 +1435,12 @@
       "id": "lqRybUEuXGE",
       "url": "https://youtube.com/shorts/lqRybUEuXGE",
       "privacy": "public",
-      "views": 36,
-      "likes": 1,
+      "views": 58,
+      "likes": 2,
       "comments": 0,
       "shares": 0
      },
-     "thumb": "https://p19-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/oQgPUYMqbBBIA0Z4L0ng5i0yJCJsGiIaBEx3s~tplv-tiktokx-origin.image?dr=9636&x-expires=1791226800&x-signature=zjjPhsfDpOClBx5sgoKefyaMZLE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+     "thumb": "https://p19-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/oQgPUYMqbBBIA0Z4L0ng5i0yJCJsGiIaBEx3s~tplv-tiktokx-origin.image?dr=9636&x-expires=1791226800&x-signature=zjjPhsfDpOClBx5sgoKefyaMZLE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     }
    ]
   },
@@ -1637,6 +1679,20 @@
      "views": 3,
      "likes": 1,
      "comments": 0
+    },
+    {
+     "ts": "2026-10-03T19:43+00:00",
+     "platform": "tiktok",
+     "views": 0,
+     "likes": 0,
+     "comments": 0
+    },
+    {
+     "ts": "2026-10-03T19:43+00:00",
+     "platform": "youtube",
+     "views": 3,
+     "likes": 1,
+     "comments": 0
     }
    ],
    "posts": [
@@ -1691,7 +1747,7 @@
       "comments": 0,
       "shares": 0
      },
-     "thumb": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/okqsUipF5BkavgiBXIwrMLrUQCiDBs20Z2FAI~tplv-tiktokx-origin.image?dr=9636&x-expires=1791226800&x-signature=SG6qWBxvOoOe7pp96LTPFhaP0VQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+     "thumb": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/okqsUipF5BkavgiBXIwrMLrUQCiDBs20Z2FAI~tplv-tiktokx-origin.image?dr=9636&x-expires=1791226800&x-signature=SG6qWBxvOoOe7pp96LTPFhaP0VQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     },
     {
      "kind": "random",
@@ -1724,7 +1780,7 @@
       "comments": 0,
       "shares": 0
      },
-     "thumb": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/o4LhImiBBvfDKxQDGqRBwITIJIiMuBEwReByxQ~tplv-tiktokx-origin.image?dr=9636&x-expires=1791226800&x-signature=QASf68kW%2Fs1XXZPm0g9MjAhFBgw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
+     "thumb": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/o4LhImiBBvfDKxQDGqRBwITIJIiMuBEwReByxQ~tplv-tiktokx-origin.image?dr=9636&x-expires=1791226800&x-signature=QASf68kW%2Fs1XXZPm0g9MjAhFBgw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     }
    ]
   }

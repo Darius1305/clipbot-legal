@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-04T09:13:27+00:00",
+ "updated": "2026-10-04T09:48:49+00:00",
  "timezone": "Europe/Berlin",
  "youtube_stats": true,
  "youtube_key": "AIzaSyAY-nYwQbXQiKofpEMcVioPy09fCu7wgu8",
@@ -44,7 +44,7 @@
      "posts": 5
     },
     "youtube": {
-     "views": 1855,
+     "views": 1861,
      "likes": 10,
      "comments": 1,
      "shares": 0,
@@ -82,7 +82,7 @@
     {
      "day": "2026-10-04",
      "platform": "youtube",
-     "views": 1855,
+     "views": 1861,
      "likes": 10,
      "comments": 1,
      "shares": 0,
@@ -481,9 +481,56 @@
      "views": 1855,
      "likes": 10,
      "comments": 1
+    },
+    {
+     "ts": "2026-10-04T09:48+00:00",
+     "platform": "tiktok",
+     "views": 7,
+     "likes": 0,
+     "comments": 0
+    },
+    {
+     "ts": "2026-10-04T09:48+00:00",
+     "platform": "youtube",
+     "views": 1861,
+     "likes": 10,
+     "comments": 1
     }
    ],
    "posts": [
+    {
+     "kind": "random",
+     "slot": "12:30",
+     "title": "bett",
+     "clips": [
+      {
+       "title": "bett",
+       "url": "https://www.twitch.tv/marli/clip/ApatheticWiseChowderTwitchRaid-wpuf8PHiWSVTPsWN",
+       "views": 4205
+      }
+     ],
+     "created_at": "2026-10-04T09:44:59+00:00",
+     "tiktok": {
+      "status": "scheduled",
+      "url": null,
+      "published_at": "2026-10-04T10:30:00.000Z",
+      "metrics_at": "2026-10-04T09:44:59.199Z",
+      "views": 0,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+     },
+     "youtube": {
+      "id": "qw59VBMEF6o",
+      "url": "https://youtube.com/shorts/qw59VBMEF6o",
+      "privacy": null,
+      "views": 0,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+     },
+     "thumb": "https://i.ytimg.com/vi/qw59VBMEF6o/hqdefault.jpg"
+    },
     {
      "kind": "top5",
      "slot": "20:00",
@@ -530,12 +577,12 @@
       "id": "NBNxZj2ONYE",
       "url": "https://youtube.com/shorts/NBNxZj2ONYE",
       "privacy": "public",
-      "views": 42,
+      "views": 43,
       "likes": 0,
       "comments": 0,
       "shares": 0
      },
-     "thumb": "https://p19-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/oYbCEiggIlGJgMxLofDlWVhVEVoGDgLegcZdeS~tplv-tiktokx-origin.image?dr=9636&x-expires=1791277200&x-signature=ftow6LzYoyYppV5mZ3Jp8Y3G%2F1I%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+     "thumb": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/oYbCEiggIlGJgMxLofDlWVhVEVoGDgLegcZdeS~tplv-tiktokx-origin.image?dr=9636&x-expires=1791277200&x-signature=Mil8LqRfM727ZZsLoQEgCrGzwpE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     },
     {
      "kind": "random",
@@ -634,7 +681,7 @@
       "comments": 0,
       "shares": 0
      },
-     "thumb": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/oc1lDzfDmIeABCqwzJJLrw2CABAEwEPgFDK6IQ~tplv-tiktokx-origin.image?dr=9636&x-expires=1791277200&x-signature=OxaGSYDnM9w%2FNm%2FPkOqUqXD9yOU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+     "thumb": "https://p19-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/oc1lDzfDmIeABCqwzJJLrw2CABAEwEPgFDK6IQ~tplv-tiktokx-origin.image?dr=9636&x-expires=1791277200&x-signature=y5fQIXgjHMt%2BOr9zt%2Fb%2F%2BajoGjk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     },
     {
      "kind": "top5",
@@ -679,7 +726,7 @@
       "shares": 0
      },
      "youtube": null,
-     "thumb": "https://p19-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/oMMGIjReITwEQgLgVn1JeFCeHvSDDnggAQGbMl~tplv-tiktokx-origin.image?dr=9636&x-expires=1791277200&x-signature=1ONsRuWURE42r9FDqaodKRcSpY8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+     "thumb": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/oMMGIjReITwEQgLgVn1JeFCeHvSDDnggAQGbMl~tplv-tiktokx-origin.image?dr=9636&x-expires=1791277200&x-signature=TBaujyf3YhDfpW5GlAaN1Zc%2BpPc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     },
     {
      "kind": "extern",
@@ -692,7 +739,7 @@
       "id": "1Bd2V7toxUE",
       "url": "https://youtube.com/shorts/1Bd2V7toxUE",
       "privacy": "public",
-      "views": 1294,
+      "views": 1299,
       "likes": 6,
       "comments": 1,
       "shares": 0
@@ -1178,9 +1225,48 @@
      "views": 2,
      "likes": 0,
      "comments": 0
+    },
+    {
+     "ts": "2026-10-04T09:48+00:00",
+     "platform": "tiktok",
+     "views": 3,
+     "likes": 0,
+     "comments": 0
+    },
+    {
+     "ts": "2026-10-04T09:48+00:00",
+     "platform": "youtube",
+     "views": 2,
+     "likes": 0,
+     "comments": 0
     }
    ],
    "posts": [
+    {
+     "kind": "random",
+     "slot": "12:30",
+     "title": "ICCOOONNNNN",
+     "clips": [
+      {
+       "title": "ICCOOONNNNN",
+       "url": "https://www.twitch.tv/niklaswilson/clip/ArtisticSparklingSpaghettiTheTarFu-NSFL8IOZHMt5Ul_Q",
+       "views": 3939
+      }
+     ],
+     "created_at": "2026-10-04T09:45:57+00:00",
+     "tiktok": {
+      "status": "scheduled",
+      "url": null,
+      "published_at": "2026-10-04T10:30:00.000Z",
+      "metrics_at": "2026-10-04T09:45:57.622Z",
+      "views": 0,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+     },
+     "youtube": null,
+     "thumb": null
+    },
     {
      "kind": "top5",
      "slot": "20:00",
@@ -1224,7 +1310,7 @@
       "shares": 0
      },
      "youtube": null,
-     "thumb": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/oAI0Fpsiv6C8aBgjNZDAIDB1MQPr0BXsyPisa~tplv-tiktokx-origin.image?dr=9636&x-expires=1791277200&x-signature=AK5MMeWeMFDT8rt47%2FmJBPlSnk8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+     "thumb": "https://p19-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/oAI0Fpsiv6C8aBgjNZDAIDB1MQPr0BXsyPisa~tplv-tiktokx-origin.image?dr=9636&x-expires=1791277200&x-signature=WBQVd5V2bsqlVLFMHhzLHfriXtU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     },
     {
      "kind": "random",
@@ -1274,7 +1360,7 @@
       "shares": 0
      },
      "youtube": null,
-     "thumb": "https://p19-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/o021HZD7QFEZQ5BwQFEmr9wfD0PdfB3Aq8pzQI~tplv-tiktokx-origin.image?dr=9636&x-expires=1791277200&x-signature=dDkgv9Gl8lSWfrZ1UPvDUx8WlCE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+     "thumb": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/o021HZD7QFEZQ5BwQFEmr9wfD0PdfB3Aq8pzQI~tplv-tiktokx-origin.image?dr=9636&x-expires=1791277200&x-signature=WRQnf52SJoNPt%2BvcEkPcyhwJ3s8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     },
     {
      "kind": "random",
@@ -1695,9 +1781,48 @@
      "views": 0,
      "likes": 0,
      "comments": 0
+    },
+    {
+     "ts": "2026-10-04T09:48+00:00",
+     "platform": "tiktok",
+     "views": 0,
+     "likes": 0,
+     "comments": 0
+    },
+    {
+     "ts": "2026-10-04T09:48+00:00",
+     "platform": "youtube",
+     "views": 0,
+     "likes": 0,
+     "comments": 0
     }
    ],
    "posts": [
+    {
+     "kind": "random",
+     "slot": "12:30",
+     "title": "Purer hass",
+     "clips": [
+      {
+       "title": "Purer hass",
+       "url": "https://www.twitch.tv/eliasn97/clip/AggressiveHeadstrongCakePanicVis-rvaoqWaoFxQUq5jv",
+       "views": 1154
+      }
+     ],
+     "created_at": "2026-10-04T09:48:23+00:00",
+     "tiktok": {
+      "status": "scheduled",
+      "url": null,
+      "published_at": "2026-10-04T10:30:00.000Z",
+      "metrics_at": "2026-10-04T09:48:23.530Z",
+      "views": 0,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+     },
+     "youtube": null,
+     "thumb": null
+    },
     {
      "kind": "top5",
      "slot": "20:00",
@@ -1782,7 +1907,7 @@
       "comments": 0,
       "shares": 0
      },
-     "thumb": "https://p19-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/oQgPUYMqbBBIA0Z4L0ng5i0yJCJsGiIaBEx3s~tplv-tiktokx-origin.image?dr=9636&x-expires=1791277200&x-signature=JNoVvXej44ipoOnm%2FEx9li11cmA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+     "thumb": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/oQgPUYMqbBBIA0Z4L0ng5i0yJCJsGiIaBEx3s~tplv-tiktokx-origin.image?dr=9636&x-expires=1791277200&x-signature=sgrwBgd3W8aKrZ5ZChH9Z2Wg5UY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     }
    ]
   },
@@ -2151,9 +2276,56 @@
      "views": 3,
      "likes": 1,
      "comments": 0
+    },
+    {
+     "ts": "2026-10-04T09:48+00:00",
+     "platform": "tiktok",
+     "views": 0,
+     "likes": 0,
+     "comments": 0
+    },
+    {
+     "ts": "2026-10-04T09:48+00:00",
+     "platform": "youtube",
+     "views": 3,
+     "likes": 1,
+     "comments": 0
     }
    ],
    "posts": [
+    {
+     "kind": "random",
+     "slot": "12:30",
+     "title": "Unfall",
+     "clips": [
+      {
+       "title": "Unfall",
+       "url": "https://www.twitch.tv/zarbex/clip/UnsightlyPleasantVampirePunchTrees-_F8gmRwbBtnFIQx_",
+       "views": 41470
+      }
+     ],
+     "created_at": "2026-10-04T09:48:46+00:00",
+     "tiktok": {
+      "status": "scheduled",
+      "url": null,
+      "published_at": "2026-10-04T10:30:00.000Z",
+      "metrics_at": "2026-10-04T09:48:46.363Z",
+      "views": 0,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+     },
+     "youtube": {
+      "id": "TACev4Pumzc",
+      "url": "https://youtube.com/shorts/TACev4Pumzc",
+      "privacy": null,
+      "views": 0,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+     },
+     "thumb": "https://i.ytimg.com/vi/TACev4Pumzc/hqdefault.jpg"
+    },
     {
      "kind": "top5",
      "slot": "20:00",

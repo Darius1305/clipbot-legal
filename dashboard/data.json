@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-07T15:19:32+00:00",
+ "updated": "2026-10-07T15:20:06+00:00",
  "timezone": "Europe/Berlin",
  "youtube_stats": true,
  "tiktok_note": "Buffer liefert TikTok-Zahlen nur alle paar Stunden",
@@ -37,12 +37,76 @@
      "posts": 0
     },
     "youtube": {
-     "views": 2140,
+     "views": 2142,
      "likes": 13,
      "comments": 1,
      "shares": 0,
      "posts": 3
     }
+   },
+   "time_test": {
+    "start": "2026-10-08",
+    "days": 7,
+    "over": false,
+    "best": null,
+    "rows": [
+     {
+      "day": "2026-10-08",
+      "time": "13:30",
+      "title": null,
+      "posted": false,
+      "views": null,
+      "views24": null
+     },
+     {
+      "day": "2026-10-09",
+      "time": "21:00",
+      "title": null,
+      "posted": false,
+      "views": null,
+      "views24": null
+     },
+     {
+      "day": "2026-10-10",
+      "time": "15:00",
+      "title": null,
+      "posted": false,
+      "views": null,
+      "views24": null
+     },
+     {
+      "day": "2026-10-11",
+      "time": "16:30",
+      "title": null,
+      "posted": false,
+      "views": null,
+      "views24": null
+     },
+     {
+      "day": "2026-10-12",
+      "time": "19:30",
+      "title": null,
+      "posted": false,
+      "views": null,
+      "views24": null
+     },
+     {
+      "day": "2026-10-13",
+      "time": "18:00",
+      "title": null,
+      "posted": false,
+      "views": null,
+      "views24": null
+     },
+     {
+      "day": "2026-10-14",
+      "time": "12:00",
+      "title": null,
+      "posted": false,
+      "views": null,
+      "views24": null
+     }
+    ]
    },
    "history": [
     {
@@ -57,7 +121,7 @@
     {
      "day": "2026-10-07",
      "platform": "youtube",
-     "views": 2140,
+     "views": 2142,
      "likes": 13,
      "comments": 1,
      "shares": 0,
@@ -80,16 +144,16 @@
      "comments": 1
     },
     {
-     "ts": "2026-10-07T15:19+00:00",
+     "ts": "2026-10-07T15:20+00:00",
      "platform": "tiktok",
      "views": 0,
      "likes": 0,
      "comments": 0
     },
     {
-     "ts": "2026-10-07T15:19+00:00",
+     "ts": "2026-10-07T15:20+00:00",
      "platform": "youtube",
-     "views": 2140,
+     "views": 2142,
      "likes": 13,
      "comments": 1
     }
@@ -121,7 +185,7 @@
       "id": "Ej3_x5QHrmc",
       "url": "https://youtube.com/shorts/Ej3_x5QHrmc",
       "privacy": "public",
-      "views": 305,
+      "views": 307,
       "likes": 3,
       "comments": 0,
       "shares": 0

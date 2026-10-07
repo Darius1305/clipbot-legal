@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-07T16:15:29+00:00",
+ "updated": "2026-10-07T16:15:57+00:00",
  "timezone": "Europe/Berlin",
  "youtube_stats": true,
  "tiktok_note": "Buffer liefert TikTok-Zahlen nur alle paar Stunden",
@@ -37,11 +37,11 @@
      "posts": 0
     },
     "youtube": {
-     "views": 2143,
-     "likes": 14,
+     "views": 2142,
+     "likes": 13,
      "comments": 1,
      "shares": 0,
-     "posts": 4
+     "posts": 3
     }
    },
    "time_test": {
@@ -121,11 +121,11 @@
     {
      "day": "2026-10-07",
      "platform": "youtube",
-     "views": 2143,
-     "likes": 14,
+     "views": 2142,
+     "likes": 13,
      "comments": 1,
      "shares": 0,
-     "posts": 4
+     "posts": 3
     }
    ],
    "snapshots": [
@@ -209,30 +209,12 @@
     {
      "ts": "2026-10-07T16:15+00:00",
      "platform": "youtube",
-     "views": 2143,
-     "likes": 14,
+     "views": 2142,
+     "likes": 13,
      "comments": 1
     }
    ],
    "posts": [
-    {
-     "kind": "extern",
-     "slot": null,
-     "title": "Marlis erster GTA Moment eskaliert direkt 😂",
-     "clips": [],
-     "created_at": "2026-10-07T16:12:05Z",
-     "tiktok": null,
-     "youtube": {
-      "id": "6JzUMHrlwR0",
-      "url": "https://youtube.com/shorts/6JzUMHrlwR0",
-      "privacy": "public",
-      "views": 1,
-      "likes": 1,
-      "comments": 0,
-      "shares": 0
-     },
-     "thumb": "https://i.ytimg.com/vi/6JzUMHrlwR0/hqdefault.jpg"
-    },
     {
      "kind": "random",
      "slot": "12:30",

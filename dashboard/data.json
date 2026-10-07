@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-07T15:46:09+00:00",
+ "updated": "2026-10-07T16:05:52+00:00",
  "timezone": "Europe/Berlin",
  "youtube_stats": true,
  "tiktok_note": "Buffer liefert TikTok-Zahlen nur alle paar Stunden",
@@ -41,7 +41,7 @@
      "likes": 13,
      "comments": 1,
      "shares": 0,
-     "posts": 4
+     "posts": 3
     }
    },
    "time_test": {
@@ -125,7 +125,7 @@
      "likes": 13,
      "comments": 1,
      "shares": 0,
-     "posts": 4
+     "posts": 3
     }
    ],
    "snapshots": [
@@ -170,33 +170,23 @@
      "views": 2142,
      "likes": 13,
      "comments": 1
+    },
+    {
+     "ts": "2026-10-07T16:05+00:00",
+     "platform": "tiktok",
+     "views": 0,
+     "likes": 0,
+     "comments": 0
+    },
+    {
+     "ts": "2026-10-07T16:05+00:00",
+     "platform": "youtube",
+     "views": 2142,
+     "likes": 13,
+     "comments": 1
     }
    ],
    "posts": [
-    {
-     "kind": "random",
-     "slot": "18:00",
-     "title": "Marlis erstes Mal in GTA V",
-     "clips": [
-      {
-       "title": "Marlis erstes Mal in GTA V",
-       "url": "https://www.twitch.tv/marli/clip/DependableBlitheMonkeyYee-sKgfw98BsAnqE0wt",
-       "views": 3212
-      }
-     ],
-     "created_at": "2026-10-07T15:46:05+00:00",
-     "tiktok": null,
-     "youtube": {
-      "id": "G_pDFnbnh1c",
-      "url": "https://youtube.com/shorts/G_pDFnbnh1c",
-      "privacy": "public",
-      "views": 0,
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-     },
-     "thumb": "https://i.ytimg.com/vi/G_pDFnbnh1c/hqdefault.jpg"
-    },
     {
      "kind": "random",
      "slot": "12:30",

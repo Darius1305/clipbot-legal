@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-07T14:13:40+00:00",
+ "updated": "2026-10-07T14:23:39+00:00",
  "timezone": "Europe/Berlin",
  "youtube_stats": true,
  "tiktok_note": "Buffer liefert TikTok-Zahlen nur alle paar Stunden",
@@ -30,18 +30,18 @@
    ],
    "totals": {
     "tiktok": {
-     "views": 15,
+     "views": 6,
      "likes": 0,
      "comments": 0,
      "shares": 0,
-     "posts": 14
+     "posts": 2
     },
     "youtube": {
-     "views": 2254,
+     "views": 2137,
      "likes": 13,
-     "comments": 2,
+     "comments": 1,
      "shares": 0,
-     "posts": 14
+     "posts": 3
     }
    },
    "history": [
@@ -120,20 +120,20 @@
     {
      "day": "2026-10-07",
      "platform": "tiktok",
-     "views": 15,
+     "views": 6,
      "likes": 0,
      "comments": 0,
      "shares": 0,
-     "posts": 14
+     "posts": 2
     },
     {
      "day": "2026-10-07",
      "platform": "youtube",
-     "views": 2254,
+     "views": 2137,
      "likes": 13,
-     "comments": 2,
+     "comments": 1,
      "shares": 0,
-     "posts": 14
+     "posts": 3
     }
    ],
    "snapshots": [
@@ -1284,488 +1284,23 @@
      "views": 2254,
      "likes": 13,
      "comments": 2
+    },
+    {
+     "ts": "2026-10-07T14:23+00:00",
+     "platform": "tiktok",
+     "views": 6,
+     "likes": 0,
+     "comments": 0
+    },
+    {
+     "ts": "2026-10-07T14:23+00:00",
+     "platform": "youtube",
+     "views": 2137,
+     "likes": 13,
+     "comments": 1
     }
    ],
    "posts": [
-    {
-     "kind": "random",
-     "slot": "12:30",
-     "title": "1:1",
-     "clips": [
-      {
-       "title": "1:1",
-       "url": "https://www.twitch.tv/marli/clip/EasyPlumpBeeGrammarKing-sNDQ_E9QBrQyP2FV",
-       "views": 3428
-      }
-     ],
-     "created_at": "2026-10-07T09:44:54+00:00",
-     "tiktok": {
-      "status": "sent",
-      "url": "https://www.tiktok.com/@marli.clips6367/video/7693871383759064353",
-      "published_at": "2026-10-07T10:32:07.379Z",
-      "metrics_at": "2026-10-07T09:44:54.145Z",
-      "views": 0,
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-     },
-     "youtube": {
-      "id": "PpoknLj6UyI",
-      "url": "https://youtube.com/shorts/PpoknLj6UyI",
-      "privacy": null,
-      "views": 0,
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-     },
-     "thumb": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/ogfyigIQQGgVtEjeLHLMGCPvC05vqgJfGDDDDm~tplv-tiktokx-origin.image?dr=9636&x-expires=1791554400&x-signature=WYLcgDBg0I%2Fi8ln5Cc5ijL1Z1GI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    },
-    {
-     "kind": "top5",
-     "slot": "20:00",
-     "title": "TOP 5 marli MOMENTE",
-     "clips": [
-      {
-       "title": "🇨🇳",
-       "url": "https://www.twitch.tv/marli/clip/StrongFurtiveChipmunkWow-5HnM-Can7wDjfxt9",
-       "views": 473
-      },
-      {
-       "title": "Balotelli in Marlis Stream",
-       "url": "https://www.twitch.tv/marli/clip/IntelligentSilkyClipzDatBoi-mPanXiwpgdDNQxNn",
-       "views": 312
-      },
-      {
-       "title": "jbbbxbx",
-       "url": "https://www.twitch.tv/marli/clip/DarkCourteousBulgogiBCWarrior-bl6RQtIEGZwfjUum",
-       "views": 266
-      },
-      {
-       "title": "marli bekommt nacken",
-       "url": "https://www.twitch.tv/marli/clip/MoldyGentleTirePipeHype-z-euf8CuZZBTSWzh",
-       "views": 229
-      },
-      {
-       "title": "Marli Emotes",
-       "url": "https://www.twitch.tv/marli/clip/GorgeousPowerfulTurnipHassanChop-X4EDlu_Y4miYl9do",
-       "views": 15843
-      }
-     ],
-     "created_at": "2026-10-06T20:58:06+00:00",
-     "tiktok": {
-      "status": "sent",
-      "url": "https://www.tiktok.com/@marli.clips6367/video/7693662071619177761",
-      "published_at": "2026-10-06T20:59:41.245Z",
-      "metrics_at": "2026-10-06T20:57:56.644Z",
-      "views": 0,
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-     },
-     "youtube": {
-      "id": "aixyBgTEum4",
-      "url": "https://youtube.com/shorts/aixyBgTEum4",
-      "privacy": null,
-      "views": 0,
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-     },
-     "thumb": "https://p19-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/ogV1MBFfzDLQsJXDmGaQfO2FYigFgi8fuGYMQC~tplv-tiktokx-origin.image?dr=9636&x-expires=1791554400&x-signature=YKlxVFL350FvniLx4v0EthSWWnI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    },
-    {
-     "kind": "random",
-     "slot": "12:30",
-     "title": "Eli is nervous",
-     "clips": [
-      {
-       "title": "Eli is nervous",
-       "url": "https://www.twitch.tv/marli/clip/SourRelentlessCougarDAESuppy-qz2EkYrSQthlMyL0",
-       "views": 3552
-      }
-     ],
-     "created_at": "2026-10-06T09:44:47+00:00",
-     "tiktok": {
-      "status": "sent",
-      "url": "https://www.tiktok.com/@marli.clips6367/video/7693500287578852641?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-      "published_at": "2026-10-06T10:31:49.050Z",
-      "metrics_at": "2026-10-06T16:54:07.764Z",
-      "views": 0,
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-     },
-     "youtube": {
-      "id": "k2jSHDms4ME",
-      "url": "https://youtube.com/shorts/k2jSHDms4ME",
-      "privacy": "public",
-      "views": 3,
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-     },
-     "thumb": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/ocutSEMGVDz3dn2LI5LZDJQ6gGVEeidgfDQcfj~tplv-tiktokx-origin.image?dr=9636&x-expires=1791554400&x-signature=CKG1E%2FuUiIikPQm5%2F5nrjGaxqrc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    },
-    {
-     "kind": "top5",
-     "slot": "20:00",
-     "title": "TOP 5 marli MOMENTE",
-     "clips": [
-      {
-       "title": "hahaha",
-       "url": "https://www.twitch.tv/marli/clip/TentativeNaiveSandwichPeteZarollTie-DsU1LZo_k9zYF2XM",
-       "views": 811
-      },
-      {
-       "title": "fall",
-       "url": "https://www.twitch.tv/marli/clip/HungrySquareFlyM4xHeh-md0PYImGENGcWP4o",
-       "views": 670
-      },
-      {
-       "title": "fall",
-       "url": "https://www.twitch.tv/marli/clip/BoringGracefulShrewLitFam-5rcM9FuAaI7v5tTL",
-       "views": 460
-      },
-      {
-       "title": "marli telefoniert mit mario balotelli",
-       "url": "https://www.twitch.tv/marli/clip/GiantHardMelonOpieOP-Dd03jzM0rQ6EPPMB",
-       "views": 408
-      },
-      {
-       "title": "yololary",
-       "url": "https://www.twitch.tv/marli/clip/ColorfulHonorableHerdDoggo-hQMUw-VZcc0L1L_j",
-       "views": 18029
-      }
-     ],
-     "created_at": "2026-10-05T20:58:00+00:00",
-     "tiktok": {
-      "status": "sent",
-      "url": "https://www.tiktok.com/@marli.clips6367/video/7693290970066062624?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-      "published_at": "2026-10-05T20:59:35.738Z",
-      "metrics_at": "2026-10-06T16:54:07.753Z",
-      "views": 0,
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-     },
-     "youtube": {
-      "id": "FOZ89nySPmg",
-      "url": "https://youtube.com/shorts/FOZ89nySPmg",
-      "privacy": "public",
-      "views": 3,
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-     },
-     "thumb": "https://p19-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/o49xDfkQwEdmQsHARGqQFBPIQ7BAEcMaGDfy1n~tplv-tiktokx-origin.image?dr=9636&x-expires=1791554400&x-signature=OieLf05lo4IDmtFtgZxeIU3ZsZI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    },
-    {
-     "kind": "extern",
-     "slot": null,
-     "title": "Top 5 Marli Momente",
-     "clips": [],
-     "created_at": "2026-10-05T19:11:08Z",
-     "tiktok": null,
-     "youtube": {
-      "id": "BPQTnMTas6E",
-      "url": "https://youtube.com/shorts/BPQTnMTas6E",
-      "privacy": "public",
-      "views": 1,
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-     },
-     "thumb": "https://i.ytimg.com/vi/BPQTnMTas6E/hqdefault.jpg"
-    },
-    {
-     "kind": "extern",
-     "slot": null,
-     "title": "Top 5 Marli Momente",
-     "clips": [],
-     "created_at": "2026-10-05T18:05:22Z",
-     "tiktok": null,
-     "youtube": {
-      "id": "2eXtlIgstxk",
-      "url": "https://youtube.com/shorts/2eXtlIgstxk",
-      "privacy": "public",
-      "views": 1,
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-     },
-     "thumb": "https://i.ytimg.com/vi/2eXtlIgstxk/hqdefault.jpg"
-    },
-    {
-     "kind": "random",
-     "slot": "17:00",
-     "title": "ertrunken",
-     "clips": [
-      {
-       "title": "ertrunken",
-       "url": "https://www.twitch.tv/marli/clip/PowerfulGorgeousMarrowCeilingCat-sIq8IKqPlLsQT0NX",
-       "views": 3605
-      }
-     ],
-     "created_at": "2026-10-05T14:16:08+00:00",
-     "tiktok": {
-      "status": "sent",
-      "url": "https://www.tiktok.com/@marli.clips6367/video/7693198797693816096?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-      "published_at": "2026-10-05T15:04:25.787Z",
-      "metrics_at": "2026-10-06T16:54:07.842Z",
-      "views": 0,
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-     },
-     "youtube": {
-      "id": "L3--j1kp-iQ",
-      "url": "https://youtube.com/shorts/L3--j1kp-iQ",
-      "privacy": "public",
-      "views": 1,
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-     },
-     "thumb": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/oUj2IziBoOPBr9NCu1dDYs7I5QitQACYvfAEto~tplv-tiktokx-origin.image?dr=9636&x-expires=1791554400&x-signature=%2BRdwY%2FAIDOft%2FGb2P6j2JRjA%2FDU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    },
-    {
-     "kind": "random",
-     "slot": "12:30",
-     "title": "redo fussball",
-     "clips": [
-      {
-       "title": "redo fussball",
-       "url": "https://www.twitch.tv/marli/clip/FastColdbloodedDiamondNomNom-KP4wK7YC7E0bESYf",
-       "views": 3831
-      }
-     ],
-     "created_at": "2026-10-05T09:44:52+00:00",
-     "tiktok": {
-      "status": "sent",
-      "url": "https://www.tiktok.com/@marli.clips6367/video/7693129267856641312?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-      "published_at": "2026-10-05T10:32:09.325Z",
-      "metrics_at": "2026-10-06T16:54:07.757Z",
-      "views": 0,
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-     },
-     "youtube": {
-      "id": "ZPuktq7vKRM",
-      "url": "https://youtube.com/shorts/ZPuktq7vKRM",
-      "privacy": "public",
-      "views": 10,
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-     },
-     "thumb": "https://p19-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/oArGEFQQECDEwmbF3sB4uqfx9kNDBwEuQrF5fH~tplv-tiktokx-origin.image?dr=9636&x-expires=1791554400&x-signature=1oEOLIg3yCTcdRLJmhcbt7VBzPU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    },
-    {
-     "kind": "top5",
-     "slot": "20:00",
-     "title": "TOP 5 marli MOMENTE",
-     "clips": [
-      {
-       "title": "timgioh marli",
-       "url": "https://www.twitch.tv/marli/clip/SoftFairCarabeefArsonNoSexy-cRpqNpBf_-1OwXFS",
-       "views": 310
-      },
-      {
-       "title": "gvuzjg",
-       "url": "https://www.twitch.tv/marli/clip/AttractiveIgnorantHeronWholeWheat-aXod0ID2lKbKgSb9",
-       "views": 237
-      },
-      {
-       "title": "HAHAHAAHAHAHAHAH",
-       "url": "https://www.twitch.tv/marli/clip/SmokyEsteemedCaterpillarHassanChop-hc28tkafbPfyhTzz",
-       "views": 183
-      },
-      {
-       "title": "Kürsat",
-       "url": "https://www.twitch.tv/marli/clip/RelievedSpineyGerbilArgieB8-sDKh89PNetLsSsEC",
-       "views": 150
-      },
-      {
-       "title": "kheir erschreckt sich",
-       "url": "https://www.twitch.tv/marli/clip/AcceptableClumsyWormThisIsSparta-8HTtH7QSQkEJNDCo",
-       "views": 23056
-      }
-     ],
-     "created_at": "2026-10-04T17:18:29+00:00",
-     "tiktok": {
-      "status": "sent",
-      "url": "https://www.tiktok.com/@marli.clips6367/video/7692874113492340001?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-      "published_at": "2026-10-04T18:02:01.070Z",
-      "metrics_at": "2026-10-06T16:54:07.768Z",
-      "views": 1,
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-     },
-     "youtube": {
-      "id": "ohKrYDiEK8g",
-      "url": "https://youtube.com/shorts/ohKrYDiEK8g",
-      "privacy": "public",
-      "views": 7,
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-     },
-     "thumb": "https://p19-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/oAYjLVIozhCitiUlzWAzxYfJ1oBkBAvIYCE1KC~tplv-tiktokx-origin.image?dr=9636&x-expires=1791554400&x-signature=G9Mgi0QMzmMTpxV9VPGOttE54ps%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    },
-    {
-     "kind": "random",
-     "slot": "17:00",
-     "title": "e-sex",
-     "clips": [
-      {
-       "title": "e-sex",
-       "url": "https://www.twitch.tv/marli/clip/WimpyPopularStinkbugArgieB8-cg9krpFS077PmJv3",
-       "views": 4041
-      }
-     ],
-     "created_at": "2026-10-04T14:15:01+00:00",
-     "tiktok": {
-      "status": "sent",
-      "url": "https://www.tiktok.com/@marli.clips6367/video/7692827701106838816?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-      "published_at": "2026-10-04T15:01:39.368Z",
-      "metrics_at": "2026-10-06T16:54:07.774Z",
-      "views": 1,
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-     },
-     "youtube": {
-      "id": "19K47tqE7sE",
-      "url": "https://youtube.com/shorts/19K47tqE7sE",
-      "privacy": "public",
-      "views": 4,
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-     },
-     "thumb": "https://p19-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/oMmBDEQhQzqDTfwBQBEtgmFhUw0r1DfmsaE4n5~tplv-tiktokx-origin.image?dr=9636&x-expires=1791554400&x-signature=tD4iu8DiD4usVSnr4ZNIJsORNKY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    },
-    {
-     "kind": "random",
-     "slot": "12:30",
-     "title": "bett",
-     "clips": [
-      {
-       "title": "bett",
-       "url": "https://www.twitch.tv/marli/clip/ApatheticWiseChowderTwitchRaid-wpuf8PHiWSVTPsWN",
-       "views": 4205
-      }
-     ],
-     "created_at": "2026-10-04T09:44:59+00:00",
-     "tiktok": {
-      "status": "sent",
-      "url": "https://www.tiktok.com/@marli.clips6367/video/7692758108703182112?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-      "published_at": "2026-10-04T10:31:15.468Z",
-      "metrics_at": "2026-10-06T16:54:07.787Z",
-      "views": 1,
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-     },
-     "youtube": {
-      "id": "qw59VBMEF6o",
-      "url": "https://youtube.com/shorts/qw59VBMEF6o",
-      "privacy": "public",
-      "views": 6,
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-     },
-     "thumb": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/oEREd4gh8JBtMVeuTMDViYDRVQGMWgfwuFSAfk~tplv-tiktokx-origin.image?dr=9636&x-expires=1791554400&x-signature=X%2FkXiG0KrHuuoc5eE%2BLMZ6PZjQw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    },
-    {
-     "kind": "top5",
-     "slot": "20:00",
-     "title": "TOP 5 marli MOMENTE",
-     "clips": [
-      {
-       "title": "das",
-       "url": "https://www.twitch.tv/marli/clip/AmorphousGeniusPuffinImGlitch-wRKLiZK54SgcdZsB",
-       "views": 404
-      },
-      {
-       "title": "2",
-       "url": "https://www.twitch.tv/marli/clip/SmilingPiercingPuffinFailFish-tOFAmjFHPz_6kQcI",
-       "views": 320
-      },
-      {
-       "title": "Lol",
-       "url": "https://www.twitch.tv/marli/clip/FantasticSpeedyBeefDBstyle-aVTO_iq4EamCnh3A",
-       "views": 306
-      },
-      {
-       "title": ",",
-       "url": "https://www.twitch.tv/marli/clip/SparklyDarkPheasantPupper-Wx_mFnVpGoTw7p9r",
-       "views": 228
-      },
-      {
-       "title": "marli tanzt zu travis scott",
-       "url": "https://www.twitch.tv/marli/clip/BlatantFantasticPuffinNononoCat-wgik90KRoPFbSjzJ",
-       "views": 26115
-      }
-     ],
-     "created_at": "2026-10-03T17:19:12+00:00",
-     "tiktok": {
-      "status": "sent",
-      "url": "https://www.tiktok.com/@marli.clips6367/video/7692503074669071649?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-      "published_at": "2026-10-03T18:02:02.844Z",
-      "metrics_at": "2026-10-06T16:54:08.061Z",
-      "views": 2,
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-     },
-     "youtube": {
-      "id": "NBNxZj2ONYE",
-      "url": "https://youtube.com/shorts/NBNxZj2ONYE",
-      "privacy": "public",
-      "views": 73,
-      "likes": 0,
-      "comments": 1,
-      "shares": 0
-     },
-     "thumb": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/oYbCEiggIlGJgMxLofDlWVhVEVoGDgLegcZdeS~tplv-tiktokx-origin.image?dr=9636&x-expires=1791554400&x-signature=hDNrD86%2FJb6e1qKwIABXrmrhDio%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    },
-    {
-     "kind": "random",
-     "slot": "17:00",
-     "title": "Hast du Haustiere?",
-     "clips": [
-      {
-       "title": "Hast du Haustiere?",
-       "url": "https://www.twitch.tv/marli/clip/PunchyDreamyDaikonTwitchRPG-gVB0LPujZreLCT2A",
-       "views": 4230
-      }
-     ],
-     "created_at": "2026-10-03T14:14:10+00:00",
-     "tiktok": {
-      "status": "sent",
-      "url": "https://www.tiktok.com/@marli.clips6367/video/7692456610920221984?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-      "published_at": "2026-10-03T15:02:59.763Z",
-      "metrics_at": "2026-10-06T16:54:07.778Z",
-      "views": 1,
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-     },
-     "youtube": {
-      "id": "e49V_LXKA6M",
-      "url": "https://youtube.com/shorts/e49V_LXKA6M",
-      "privacy": "public",
-      "views": 3,
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-     },
-     "thumb": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/okm0wieBnQUDwMoDEqRQphDyF8fFEBRL2QtCoo~tplv-tiktokx-origin.image?dr=9636&x-expires=1791554400&x-signature=fn3PxB6pm3UwoRPAe6VRi5bTGJ8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    },
     {
      "kind": "random",
      "slot": "12:30",
@@ -1792,12 +1327,12 @@
       "id": "Ej3_x5QHrmc",
       "url": "https://youtube.com/shorts/Ej3_x5QHrmc",
       "privacy": "public",
-      "views": 307,
+      "views": 302,
       "likes": 3,
       "comments": 0,
       "shares": 0
      },
-     "thumb": "https://p19-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/oEYguIs2vD82BCi9i5mIDA5D0AMaBZ1KgBXxC~tplv-tiktokx-origin.image?dr=9636&x-expires=1791554400&x-signature=jJK%2BVttLJwFLCLV41X2gqBhaaf8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+     "thumb": "https://p16-common-sign.tiktokcdn-eu.com/tos-useast2a-p-4864-euttp/oEYguIs2vD82BCi9i5mIDA5D0AMaBZ1KgBXxC~tplv-tiktokx-origin.image?dr=10395&x-expires=1791554400&x-signature=3%2FqhzRusPtUwPiin0ZKdrmgxqbc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a"
     },
     {
      "kind": "random",
@@ -1830,52 +1365,7 @@
       "comments": 0,
       "shares": 0
      },
-     "thumb": "https://p19-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/oc1lDzfDmIeABCqwzJJLrw2CABAEwEPgFDK6IQ~tplv-tiktokx-origin.image?dr=9636&x-expires=1791554400&x-signature=cHoutX2valJA%2FHj6p2oN6GGMQNI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    },
-    {
-     "kind": "top5",
-     "slot": null,
-     "title": "TOP 5 MARLI MOMENTE",
-     "clips": [
-      {
-       "title": "mARLI Buttplug prank",
-       "url": "https://www.twitch.tv/marli/clip/RefinedPlayfulNostrilHoneyBadger-MBYFVlcdtN1qxUlf",
-       "views": 722
-      },
-      {
-       "title": "Das erste mal",
-       "url": "https://www.twitch.tv/marli/clip/DependableBlitheMonkeyYee-sKgfw98BsAnqE0wt",
-       "views": 592
-      },
-      {
-       "title": "marli holt seine freunde und tanzt wie ein löwe",
-       "url": "https://www.twitch.tv/marli/clip/FancyRealWitchSoonerLater-Zn_x3hOcB494kwuB",
-       "views": 506
-      },
-      {
-       "title": "o",
-       "url": "https://www.twitch.tv/marli/clip/ElatedYummyMouseCharlietheUnicorn-Q8byTigMmp1Cw7o5",
-       "views": 459
-      },
-      {
-       "title": "yakary geht wild",
-       "url": "https://www.twitch.tv/marli/clip/CovertCourageousPastaMoreCowbell-f1TxQKWAdlwkPHlQ",
-       "views": 31813
-      }
-     ],
-     "created_at": "2026-10-02T20:37:02+00:00",
-     "tiktok": {
-      "status": "sent",
-      "url": "https://www.tiktok.com/@marli.clips6367/video/7692172369422535968?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
-      "published_at": "2026-10-02T20:38:46.782Z",
-      "metrics_at": "2026-10-06T16:54:07.850Z",
-      "views": 3,
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-     },
-     "youtube": null,
-     "thumb": "https://p19-common-sign.tiktokcdn-us.com/tos-useast2a-p-4864-euttp/oMMGIjReITwEQgLgVn1JeFCeHvSDDnggAQGbMl~tplv-tiktokx-origin.image?dr=9636&x-expires=1791554400&x-signature=mlRt8uNqRoOUzm51AcJXfENPJBo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+     "thumb": "https://p16-common-sign.tiktokcdn-eu.com/tos-useast2a-p-4864-euttp/oc1lDzfDmIeABCqwzJJLrw2CABAEwEPgFDK6IQ~tplv-tiktokx-origin.image?dr=10395&x-expires=1791554400&x-signature=sGvsSc1J4dLHQ6%2B9scAgJSrFIZ8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a"
     },
     {
      "kind": "extern",

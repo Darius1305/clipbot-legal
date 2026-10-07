@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-07T21:13:34+00:00",
+ "updated": "2026-10-07T21:43:33+00:00",
  "timezone": "Europe/Berlin",
  "youtube_stats": true,
  "tiktok_note": "Buffer liefert TikTok-Zahlen nur alle paar Stunden",
@@ -30,11 +30,11 @@
    ],
    "totals": {
     "tiktok": {
-     "views": 0,
+     "views": 6,
      "likes": 0,
      "comments": 0,
      "shares": 0,
-     "posts": 0
+     "posts": 2
     },
     "youtube": {
      "views": 2169,
@@ -112,11 +112,11 @@
     {
      "day": "2026-10-07",
      "platform": "tiktok",
-     "views": 0,
+     "views": 6,
      "likes": 0,
      "comments": 0,
      "shares": 0,
-     "posts": 0
+     "posts": 2
     },
     {
      "day": "2026-10-07",
@@ -352,6 +352,20 @@
      "views": 2169,
      "likes": 15,
      "comments": 1
+    },
+    {
+     "ts": "2026-10-07T21:43+00:00",
+     "platform": "tiktok",
+     "views": 6,
+     "likes": 0,
+     "comments": 0
+    },
+    {
+     "ts": "2026-10-07T21:43+00:00",
+     "platform": "youtube",
+     "views": 2169,
+     "likes": 15,
+     "comments": 1
     }
    ],
    "posts": [
@@ -386,10 +400,10 @@
      ],
      "created_at": "2026-10-03T12:32:57+00:00",
      "tiktok": {
-      "status": null,
-      "url": null,
-      "published_at": null,
-      "metrics_at": null,
+      "status": "sent",
+      "url": "https://www.tiktok.com/@marli.clips6367/video/7692418637453413665?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
+      "published_at": "2026-10-03T12:34:29.629Z",
+      "metrics_at": "2026-10-07T15:17:39.843Z",
       "views": 0,
       "likes": 0,
       "comments": 0,
@@ -419,11 +433,11 @@
      ],
      "created_at": "2026-10-02T21:36:51+00:00",
      "tiktok": {
-      "status": null,
-      "url": null,
-      "published_at": null,
-      "metrics_at": null,
-      "views": 0,
+      "status": "sent",
+      "url": "https://www.tiktok.com/@marli.clips6367/video/7692187777592479009?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
+      "published_at": "2026-10-02T21:38:41.143Z",
+      "metrics_at": "2026-10-07T15:17:39.843Z",
+      "views": 6,
       "likes": 0,
       "comments": 0,
       "shares": 0

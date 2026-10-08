@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-08T15:43:35+00:00",
+ "updated": "2026-10-08T16:13:37+00:00",
  "timezone": "Europe/Berlin",
  "youtube_stats": true,
  "tiktok_note": "Buffer liefert TikTok-Zahlen nur alle paar Stunden",
@@ -590,6 +590,20 @@
     },
     {
      "ts": "2026-10-08T15:43+00:00",
+     "platform": "youtube",
+     "views": 2194,
+     "likes": 15,
+     "comments": 1
+    },
+    {
+     "ts": "2026-10-08T16:13+00:00",
+     "platform": "tiktok",
+     "views": 6,
+     "likes": 0,
+     "comments": 0
+    },
+    {
+     "ts": "2026-10-08T16:13+00:00",
      "platform": "youtube",
      "views": 2194,
      "likes": 15,

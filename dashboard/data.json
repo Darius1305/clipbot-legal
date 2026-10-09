@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-09T11:13:34+00:00",
+ "updated": "2026-10-09T11:43:37+00:00",
  "timezone": "Europe/Berlin",
  "youtube_stats": true,
  "tiktok_note": "Buffer liefert TikTok-Zahlen nur alle paar Stunden",
@@ -37,7 +37,7 @@
      "posts": 2
     },
     "youtube": {
-     "views": 2205,
+     "views": 2204,
      "likes": 15,
      "comments": 1,
      "shares": 0,
@@ -48,7 +48,7 @@
     "start": "2026-10-08",
     "days": 7,
     "over": false,
-    "best": null,
+    "best": "13:30",
     "rows": [
      {
       "day": "2026-10-08",
@@ -56,7 +56,7 @@
       "title": "Marlis epischer Ball Fail beim Probetraining",
       "posted": true,
       "views": 1,
-      "views24": null
+      "views24": 1
      },
      {
       "day": "2026-10-09",
@@ -157,7 +157,7 @@
     {
      "day": "2026-10-09",
      "platform": "youtube",
-     "views": 2205,
+     "views": 2204,
      "likes": 15,
      "comments": 1,
      "shares": 0,
@@ -878,6 +878,20 @@
      "views": 2205,
      "likes": 15,
      "comments": 1
+    },
+    {
+     "ts": "2026-10-09T11:43+00:00",
+     "platform": "tiktok",
+     "views": 6,
+     "likes": 0,
+     "comments": 0
+    },
+    {
+     "ts": "2026-10-09T11:43+00:00",
+     "platform": "youtube",
+     "views": 2204,
+     "likes": 15,
+     "comments": 1
     }
    ],
    "posts": [
@@ -949,7 +963,7 @@
       "id": "Ej3_x5QHrmc",
       "url": "https://youtube.com/shorts/Ej3_x5QHrmc",
       "privacy": "public",
-      "views": 357,
+      "views": 356,
       "likes": 3,
       "comments": 0,
       "shares": 0

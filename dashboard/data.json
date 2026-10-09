@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-09T18:13:35+00:00",
+ "updated": "2026-10-09T18:44:44+00:00",
  "timezone": "Europe/Berlin",
  "youtube_stats": true,
  "tiktok_note": "Buffer liefert TikTok-Zahlen nur alle paar Stunden",
@@ -41,7 +41,7 @@
      "likes": 15,
      "comments": 1,
      "shares": 0,
-     "posts": 5
+     "posts": 6
     }
    },
    "time_test": {
@@ -61,9 +61,9 @@
      {
       "day": "2026-10-09",
       "time": "21:00",
-      "title": null,
-      "posted": false,
-      "views": null,
+      "title": "Marlis traurige Antwort zu Haustieren",
+      "posted": true,
+      "views": 0,
       "views24": null
      },
      {
@@ -161,7 +161,7 @@
      "likes": 15,
      "comments": 1,
      "shares": 0,
-     "posts": 5
+     "posts": 6
     }
    ],
    "snapshots": [
@@ -1088,9 +1088,47 @@
      "views": 2214,
      "likes": 15,
      "comments": 1
+    },
+    {
+     "ts": "2026-10-09T18:44+00:00",
+     "platform": "tiktok",
+     "views": 6,
+     "likes": 0,
+     "comments": 0
+    },
+    {
+     "ts": "2026-10-09T18:44+00:00",
+     "platform": "youtube",
+     "views": 2214,
+     "likes": 15,
+     "comments": 1
     }
    ],
    "posts": [
+    {
+     "kind": "random",
+     "slot": "21:00",
+     "title": "Marlis traurige Antwort zu Haustieren",
+     "clips": [
+      {
+       "title": "Marlis traurige Antwort zu Haustieren",
+       "url": "https://www.twitch.tv/marli/clip/PunchyDreamyDaikonTwitchRPG-gVB0LPujZreLCT2A",
+       "views": 4318
+      }
+     ],
+     "created_at": "2026-10-09T18:44:41+00:00",
+     "tiktok": null,
+     "youtube": {
+      "id": "cK0XQboJ65c",
+      "url": "https://youtube.com/shorts/cK0XQboJ65c",
+      "privacy": "public",
+      "views": 0,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+     },
+     "thumb": "https://i.ytimg.com/vi/cK0XQboJ65c/hqdefault.jpg"
+    },
     {
      "kind": "random",
      "slot": "13:30",

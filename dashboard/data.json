@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-10T13:43:34+00:00",
+ "updated": "2026-10-10T14:13:33+00:00",
  "timezone": "Europe/Berlin",
  "youtube_stats": true,
  "tiktok_note": "Buffer liefert TikTok-Zahlen nur alle paar Stunden",
@@ -15,13 +15,7 @@
     "handle": "marli.clips6367",
     "url": "https://www.tiktok.com/@marli.clips6367"
    },
-   "youtube": {
-    "id": "UCIWkUwzN4uevgMCFzDdwxyQ",
-    "subscribers": 1,
-    "title": "marliclip",
-    "url": "https://www.youtube.com/channel/UCIWkUwzN4uevgMCFzDdwxyQ",
-    "avatar": "https://yt3.ggpht.com/rPPYwl-Ou9-KhXfYlwitCbEB2K2LM8iUZlcc1x3qo5W5KvMoGkhjHu2E2qtSg3km9Xui8iSWyw=s88-c-k-c0x00ffffff-no-rj"
-   },
+   "youtube": {},
    "slots": [
     {
      "time": "15:00",
@@ -37,11 +31,11 @@
      "posts": 2
     },
     "youtube": {
-     "views": 2226,
-     "likes": 15,
-     "comments": 1,
+     "views": 0,
+     "likes": 0,
+     "comments": 0,
      "shares": 0,
-     "posts": 7
+     "posts": 0
     }
    },
    "time_test": {
@@ -55,7 +49,7 @@
       "time": "13:30",
       "title": "Marlis epischer Ball Fail beim Probetraining",
       "posted": true,
-      "views": 2,
+      "views": null,
       "views24": 1
      },
      {
@@ -63,7 +57,7 @@
       "time": "21:00",
       "title": "Marlis traurige Antwort zu Haustieren",
       "posted": true,
-      "views": 0,
+      "views": null,
       "views24": null
      },
      {
@@ -71,7 +65,7 @@
       "time": "15:00",
       "title": "Marli rastet komplett aus",
       "posted": true,
-      "views": 0,
+      "views": null,
       "views24": null
      },
      {
@@ -175,11 +169,11 @@
     {
      "day": "2026-10-10",
      "platform": "youtube",
-     "views": 2226,
-     "likes": 15,
-     "comments": 1,
+     "views": 0,
+     "likes": 0,
+     "comments": 0,
      "shares": 0,
-     "posts": 7
+     "posts": 0
     }
    ],
    "snapshots": [
@@ -1358,6 +1352,20 @@
      "views": 2226,
      "likes": 15,
      "comments": 1
+    },
+    {
+     "ts": "2026-10-10T14:13+00:00",
+     "platform": "tiktok",
+     "views": 6,
+     "likes": 0,
+     "comments": 0
+    },
+    {
+     "ts": "2026-10-10T14:13+00:00",
+     "platform": "youtube",
+     "views": 0,
+     "likes": 0,
+     "comments": 0
     }
    ],
    "posts": [
@@ -1377,7 +1385,7 @@
      "youtube": {
       "id": "DLeuTsspxn8",
       "url": "https://youtube.com/shorts/DLeuTsspxn8",
-      "privacy": "public",
+      "privacy": null,
       "views": 0,
       "likes": 0,
       "comments": 0,
@@ -1401,7 +1409,7 @@
      "youtube": {
       "id": "cK0XQboJ65c",
       "url": "https://youtube.com/shorts/cK0XQboJ65c",
-      "privacy": "public",
+      "privacy": null,
       "views": 0,
       "likes": 0,
       "comments": 0,
@@ -1425,8 +1433,8 @@
      "youtube": {
       "id": "-hw_3GcZ2m4",
       "url": "https://youtube.com/shorts/-hw_3GcZ2m4",
-      "privacy": "public",
-      "views": 2,
+      "privacy": null,
+      "views": 0,
       "likes": 0,
       "comments": 0,
       "shares": 0
@@ -1443,9 +1451,9 @@
      "youtube": {
       "id": "6JzUMHrlwR0",
       "url": "https://youtube.com/shorts/6JzUMHrlwR0",
-      "privacy": "public",
-      "views": 11,
-      "likes": 2,
+      "privacy": null,
+      "views": 0,
+      "likes": 0,
       "comments": 0,
       "shares": 0
      },
@@ -1476,9 +1484,9 @@
      "youtube": {
       "id": "Ej3_x5QHrmc",
       "url": "https://youtube.com/shorts/Ej3_x5QHrmc",
-      "privacy": "public",
-      "views": 376,
-      "likes": 3,
+      "privacy": null,
+      "views": 0,
+      "likes": 0,
       "comments": 0,
       "shares": 0
      },
@@ -1509,9 +1517,9 @@
      "youtube": {
       "id": "i8Pm8VBaEWc",
       "url": "https://youtube.com/shorts/i8Pm8VBaEWc",
-      "privacy": "public",
-      "views": 494,
-      "likes": 4,
+      "privacy": null,
+      "views": 0,
+      "likes": 0,
       "comments": 0,
       "shares": 0
      },
@@ -1527,10 +1535,10 @@
      "youtube": {
       "id": "1Bd2V7toxUE",
       "url": "https://youtube.com/shorts/1Bd2V7toxUE",
-      "privacy": "public",
-      "views": 1343,
-      "likes": 6,
-      "comments": 1,
+      "privacy": null,
+      "views": 0,
+      "likes": 0,
+      "comments": 0,
       "shares": 0
      },
      "thumb": "https://i.ytimg.com/vi/1Bd2V7toxUE/hqdefault.jpg"

@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-10T12:13:36+00:00",
+ "updated": "2026-10-10T12:44:31+00:00",
  "timezone": "Europe/Berlin",
  "youtube_stats": true,
  "tiktok_note": "Buffer liefert TikTok-Zahlen nur alle paar Stunden",
@@ -41,7 +41,7 @@
      "likes": 15,
      "comments": 1,
      "shares": 0,
-     "posts": 6
+     "posts": 7
     }
    },
    "time_test": {
@@ -69,9 +69,9 @@
      {
       "day": "2026-10-10",
       "time": "15:00",
-      "title": null,
-      "posted": false,
-      "views": null,
+      "title": "Marli rastet komplett aus",
+      "posted": true,
+      "views": 0,
       "views24": null
      },
      {
@@ -179,7 +179,7 @@
      "likes": 15,
      "comments": 1,
      "shares": 0,
-     "posts": 6
+     "posts": 7
     }
    ],
    "snapshots": [
@@ -1316,9 +1316,47 @@
      "views": 2226,
      "likes": 15,
      "comments": 1
+    },
+    {
+     "ts": "2026-10-10T12:44+00:00",
+     "platform": "tiktok",
+     "views": 6,
+     "likes": 0,
+     "comments": 0
+    },
+    {
+     "ts": "2026-10-10T12:44+00:00",
+     "platform": "youtube",
+     "views": 2226,
+     "likes": 15,
+     "comments": 1
     }
    ],
    "posts": [
+    {
+     "kind": "random",
+     "slot": "15:00",
+     "title": "Marli rastet komplett aus",
+     "clips": [
+      {
+       "title": "Marli rastet komplett aus",
+       "url": "https://www.twitch.tv/marli/clip/PrettyPoorPieChocolateRain-XFQ--b9vgcGEYmNS",
+       "views": 789
+      }
+     ],
+     "created_at": "2026-10-10T12:44:29+00:00",
+     "tiktok": null,
+     "youtube": {
+      "id": "DLeuTsspxn8",
+      "url": "https://youtube.com/shorts/DLeuTsspxn8",
+      "privacy": "public",
+      "views": 0,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+     },
+     "thumb": "https://i.ytimg.com/vi/DLeuTsspxn8/hqdefault.jpg"
+    },
     {
      "kind": "random",
      "slot": "21:00",

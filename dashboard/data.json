@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14T21:43:44+00:00",
+ "updated": "2026-10-14T23:54:33+00:00",
  "timezone": "Europe/Berlin",
  "youtube_stats": true,
  "tiktok_note": "Buffer liefert TikTok-Zahlen nur alle paar Stunden",
@@ -18,7 +18,7 @@
    "youtube": {},
    "slots": [
     {
-     "time": "12:00",
+     "time": "13:30",
      "kind": "random"
     }
    ],
@@ -41,7 +41,7 @@
    "time_test": {
     "start": "2026-10-08",
     "days": 7,
-    "over": false,
+    "over": true,
     "best": "13:30",
     "rows": [
      {
@@ -240,6 +240,24 @@
     },
     {
      "day": "2026-10-14",
+     "platform": "youtube",
+     "views": 0,
+     "likes": 0,
+     "comments": 0,
+     "shares": 0,
+     "posts": 0
+    },
+    {
+     "day": "2026-10-15",
+     "platform": "tiktok",
+     "views": 6,
+     "likes": 0,
+     "comments": 0,
+     "shares": 0,
+     "posts": 2
+    },
+    {
+     "day": "2026-10-15",
      "platform": "youtube",
      "views": 0,
      "likes": 0,
@@ -3268,6 +3286,20 @@
     },
     {
      "ts": "2026-10-14T21:43+00:00",
+     "platform": "youtube",
+     "views": 0,
+     "likes": 0,
+     "comments": 0
+    },
+    {
+     "ts": "2026-10-14T23:54+00:00",
+     "platform": "tiktok",
+     "views": 6,
+     "likes": 0,
+     "comments": 0
+    },
+    {
+     "ts": "2026-10-14T23:54+00:00",
      "platform": "youtube",
      "views": 0,
      "likes": 0,
